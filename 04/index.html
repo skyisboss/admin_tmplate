@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>後台首頁</title>
+    <!-- zui -->
+    <link href="zui/css/zui.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="zui/css/app.css">
+  </head>
+  <body>
+
+<header>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
+  <div class="container-fluid">
+    <!-- 导航头部 -->
+    <div class="navbar-header">
+      <!-- 移动设备上的导航切换按钮 -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-example">
+        <span class="sr-only">切换导航</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- 品牌名称或logo -->
+      <a class="navbar-brand" href="#">THINKzm <i style="font-size: 12px"><sup> v1.0</sup></i></a>
+    </div>
+    <!-- 导航项目 -->
+    <div class="collapse navbar-collapse navbar-collapse-example">
+      <!-- 一般导航项目 -->
+      <ul class="nav navbar-nav">
+        <!-- 导航中的下拉菜单 -->
+        <li class="dropdown">
+          <a href="your/nice/url" class="dropdown-toggle" data-toggle="dropdown"><i class="icon icon-arrows"></i>快捷操作 <b class="caret"></b></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="your/nice/url">快捷一</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="your/nice/url">快捷二</a></li>
+          </ul>
+        </li>
+        <li class="active"><a href="/"><i class="icon icon-home"></i>後台首頁</a></li>
+        <li><a href="system.html"><i class="icon icon-cog"></i>系統設置</a></li>
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right" style="margin-right: 10px;">
+        <li><a href="your/nice/url"><i class="icon icon-trash"></i>删除</a></li>
+        <li><a href="your/nice/url"><i class="icon icon-external-link"></i>前台</a></li>
+        <!-- 导航中的下拉菜单 -->
+        <li class="dropdown">
+          <a href="your/nice/url" class="dropdown-toggle" data-toggle="dropdown"><i class="icon icon-signout"></i>管理員 <b class="caret"></b></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="your/nice/url">admin</a></li>
+            <li><a href="your/nice/url">修改密碼</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="login"><i class="icon icon-signout"></i>退出登錄</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- END .navbar-collapse -->
+  </div>
+</nav>
+</header>
+  <!-- END  nav -->
+
+<div class="container-fluid">
+
+<div class="sidebar ">
+<nav class="menu" data-ride="menu">
+  <ul id="treeMenu" class="tree tree-menu" data-ride="tree">
+    <li class="full-btn"><a href="#"><i class="icon icon-th"></i><span>收起</span></a></li>
+    <li class="open">
+      <a href="#" class="group-title"><i class="icon icon-time"></i>後台首頁</a>
+      <ul>
+        <li><a href="#">後台首頁</a></li>
+        <li><a href="#" data-remote="profile.html" data-toggle="modal">個人設置</a></li>
+        <li><a href="#" class="clear">清空緩存</a></li>
+      </ul>
+    </li>
+<!--     <li><a href="#"><i class="icon icon-trash"></i>垃圾篓</a></li>
+    <li><a href="#"><i class="icon icon-list-ul"></i>全部</a></li>
+    <li class="open">
+      <a href="#"><i class="icon icon-tasks"></i>状态</a>
+      <ul>
+        <li>
+          <a href="#"><i class="icon icon-circle-blank"></i>已就绪</a>
+          <ul>
+            <li><a href="#">已取消</a></li>
+            <li><a href="#">已关闭</a></li>
+          </ul>
+        </li>
+        <li class="active"><a href="#"><i class="icon icon-play-sign"></i>进行中</a></li>
+        <li><a href="#"><i class="icon icon-ok-sign"></i>已完成</a></li>
+      </ul>
+    </li> -->
+  </ul>
+</nav>
+</div>
+<!-- END .sidebar -->
+
+<div class="main">
+  <div class="main-heading"><i class="icon icon-laptop"></i><span>後台首頁</span></div>
+  <div class="main-center">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="alert alert-info alert-dismissible" role="alert" style="border-radius:0">                
+                  <p style="font-size:18px;padding-bottom:10px">欢迎使用 追梦CMS</p>
+                  <p>                 
+              登录者: admin   ,所属用户组:  超级管理员。上次登录时间：2017-05-06 00:09:32 ，登录IP： 127.0.0.1               </p>
+                </div>
+        </div>
+        <div class="col-md-6">
+            <table class="table table-hover table-box">
+                        <thead>
+                            <tr>                                
+                                <th colspan="2"><i class="icon icon-file-text-o"></i>系统信息</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                                    <tr>
+                                <td>追梦CMS版本</td>
+                                <td>1.0</td>
+
+                            </tr>
+                                                    <tr>
+                                <td>ThinkPHP版本</td>
+                                <td>5.0.8</td>
+
+                            </tr>
+                                                    <tr>
+                                <td>操作系统</td>
+                                <td>WINNT</td>
+
+                            </tr>
+                                                    <tr>
+                                <td>运行环境</td>
+                                <td>123</td>
+
+                            </tr>
+                                                    <tr>
+                                <td>PHP版本</td>
+                                <td>5.6.27</td>
+
+                            </tr>
+                                                    <tr>
+                                <td>MYSQL版本</td>
+                                <td>5.5.53</td>
+
+                            </tr>
+                                                    </tbody>
+                    </table>
+        </div>
+
+        <div class="col-md-6">
+            <table class="table table-hover table-box">
+                                    <thead>
+                                        <tr>                                
+                                            <th colspan="2"><i class="icon icon-file-text-o"></i>产品信息</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                                                <tr>
+                                            <td>产品名称</td>
+                                            <td>追梦CMS</td>
+
+                                        </tr>
+                                                                <tr>
+                                            <td>开发与团队</td>
+                                            <td>罗宗懋</td>
+
+                                        </tr>
+                                                                <tr>
+                                            <td>代码托管</td>
+                                            <td>https://github.com/skyisboss/zmThink</td>
+
+                                        </tr>
+                                                                <tr>
+                                            <td>特别感谢</td>
+                                            <td>ThinkPHP 、Bootstrap</td>
+
+                                        </tr>
+                                                                <tr>
+                                            <td>官方地址</td>
+                                            <td>http://zmcms.wumiss.com</td>
+
+                                        </tr>
+                                                                <tr>
+                                            <td>使用说明</td>
+                                            <td>您可免费任意使用本程序，但须保留相关版权信息。</td>
+
+                                        </tr>
+                                                                </tbody>
+                                </table>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- END .main -->
+
+</div>
+    <script src="zui/js/jquery.js"></script>
+    <script src="zui/js/zui.min.js"></script>
+    <script src="zui/js/app.js"></script>
+    <script>
+      $('.clear').on('click', function() {
+          new $.zui.Messager('缓存已清除', {
+              icon: 'ok-sign',
+              type: 'success',
+              placement:'center'
+          }).show();
+      });
+    </script>
+  </body>
+</html>

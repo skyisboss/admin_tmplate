@@ -1,0 +1,202 @@
+<div class="modal-header">
+	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	<h4 id="viewModalLabel" class="semi-bold">查看用户</h4>
+</div>
+<div class="modal-body" style="padding :10px!important">
+	<div class="row">
+		<input id="view-id" name="view-id" type="hidden" value="3">
+		<div class="col-md-3 col-sm-3">
+			<div class="user-profile-pic">
+				<img id="view-profile-pic" src="http://www.avs.com/media/users/nopic-Male.gif"></div>
+		</div>
+		<div class="col-md-9 col-sm-9">
+			<!-- <div class="user-description-container">
+				<h4 id="view-username" class="semi-bold no-margin">pkmp4</h4>
+				<h6 id="view-name" class="no-margin"></h6>
+				<br>
+				<p id="view-website-container" style="display: none;">
+					<i class="fa fa-globe"></i>
+					<span id="view-website">as</span></p>
+				<p>
+					<i class="fa fa-envelope"></i>
+					<a id="view-send-email" href="http://www.avs.com/siteadmin/users.php?m=mail&amp;email=phpbbwap@gmail.com&amp;username=pkmp4">
+						<span id="view-email">phpbbwap@gmail.com</span></a>
+				</p>
+				<p id="view-bdate-container" style="display: none;">
+					<i class="fa fa-birthday-cake"></i>
+					<span id="view-bdate">5/30/1979</span></p>
+			</div> -->
+			<div class="user-description-container">
+				<h4 id="view-username" class="semi-bold no-margin">
+					<font style="vertical-align: inherit;">
+						<font style="vertical-align: inherit;">bt0s</font></font>
+				</h4>
+				<h6 id="view-name" class="no-margin">
+					<font style="vertical-align: inherit;">
+						<font style="vertical-align: inherit;">asd asd</font></font>
+				</h6>
+				<br>
+				<p id="view-website-container" style="display: block;">
+					<i class="fa fa-globe"></i>
+					<span id="view-website">
+						<font style="vertical-align: inherit;">
+							<font style="vertical-align: inherit;">如</font></font>
+					</span>
+				</p>
+				<p>
+					<i class="fa fa-envelope"></i>
+					<a id="view-send-email" href="http://www.avs.com/siteadmin/users.php?m=mail&amp;email=bt0s@bt0s.com&amp;username=bt0s">
+						<span id="view-email">
+							<font style="vertical-align: inherit;">
+								<font style="vertical-align: inherit;">bt0s@bt0s.com</font></font>
+						</span>
+					</a>
+				</p>
+				<p id="view-bdate-container" style="display: block;">
+					<i class="fa fa-birthday-cake"></i>
+					<span id="view-bdate">
+						<font style="vertical-align: inherit;">
+							<font style="vertical-align: inherit;">1979年5月30日</font></font>
+					</span>
+				</p>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+
+	  <!-- Nav tabs -->
+	  <ul class="nav nav-tabs m-t-15" role="tablist">
+	    <li role="presentation" class="active"><a href="#view-tab1" aria-controls="view-tab1" role="tab" data-toggle="tab">基本信息</a></li>
+	    <li role="presentation"><a href="#view-tab2" aria-controls="view-tab2" role="tab" data-toggle="tab">其他信息</a></li>
+	  </ul>
+
+	  <!-- Tab panes -->
+	  <div class="tab-content">
+	    <div role="tabpanel" class="tab-pane active" id="view-tab1">
+	    	<div class="row">
+	    		<div class="col-xs-12">
+	    			<div id="view-basic-info-container" class="info-container">
+	    				<div class="user-info">
+	    					<div class="info-title col-md-3 col-sm-3">性别</div>
+	    					<div class="info-body col-md-9 col-sm-9">女</div>
+	    					<div class="clearfix"></div>
+	    				</div>
+	    				<div class="user-info">
+	    					<div class="info-title col-md-3 col-sm-3">最后登录IP</div>
+	    					<div class="info-body col-md-9 col-sm-9">
+	    						<span class="pull-left">192.168.117.1</span>
+	    						<a class="btn btn-danger btn-xs pull-right" href="" onclick="Javascript:return confirm('确定操作？');">加入黑名单</a></div>
+	    					<div class="clearfix"></div>
+	    				</div>
+	    				<div class="user-info">
+	    					<div class="info-title col-md-3 col-sm-3">类型</div>
+	    					<div class="info-body col-md-9 col-sm-9">普通用户</div>
+	    					<div class="clearfix"></div>
+	    				</div>
+	    				<div class="user-info">
+	    					<div class="info-title col-md-3 col-sm-3">好评率</div>
+	    					<div class="info-body col-md-9 col-sm-9">50%</div>
+	    					<div class="clearfix"></div>
+	    				</div>
+	    				<div class="user-info">
+	    					<div class="info-title col-md-3 col-sm-3">访客</div>
+	    					<div class="info-body col-md-9 col-sm-9">18</div>
+	    					<div class="clearfix"></div>
+	    				</div>
+	    				<div class="user-info">
+	    					<div class="info-title col-md-3 col-sm-3">视频被浏览</div>
+	    					<div class="info-body col-md-9 col-sm-9">8</div>
+	    					<div class="clearfix"></div>
+	    				</div>
+	    				<div class="user-info">
+	    					<div class="info-title col-md-3 col-sm-3">已看视频</div>
+	    					<div class="info-body col-md-9 col-sm-9">8</div>
+	    					<div class="clearfix"></div>
+	    				</div>
+	    				<div class="user-info">
+	    					<div class="info-title col-md-3 col-sm-3">邮件验证</div>
+	    					<div class="info-body col-md-9 col-sm-9">已验证</div>
+	    					<div class="clearfix"></div>
+	    				</div>
+	    				<div class="user-info">
+	    					<div class="info-title col-md-3 col-sm-3">状态</div>
+	    					<div class="info-body col-md-9 col-sm-9">启用</div>
+	    					<div class="clearfix"></div>
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="clearfix"></div>
+	    	</div>
+	    </div>
+	    <div role="tabpanel" class="tab-pane" id="view-tab2">
+	    	<div class="row">
+	    		<div class="col-xs-12">
+	    			<div id="view-advanced-info-container" class="info-container">
+	    				<div class="user-info">
+	    					<div class="info-title col-md-3 col-sm-3">介绍</div>
+	    					<div class="info-body col-md-9 col-sm-9">asd</div>
+	    					<div class="clearfix"></div>
+	    				</div>
+	    				<div class="user-info">
+	    					<div class="info-title col-md-3 col-sm-3">Occupation</div>
+	    					<div class="info-body col-md-9 col-sm-9">asd</div>
+	    					<div class="clearfix"></div>
+	    				</div>
+	    				<div class="user-info">
+	    					<div class="info-title col-md-3 col-sm-3">Company</div>
+	    					<div class="info-body col-md-9 col-sm-9">asd</div>
+	    					<div class="clearfix"></div>
+	    				</div>
+	    				<div class="user-info">
+	    					<div class="info-title col-md-3 col-sm-3">School</div>
+	    					<div class="info-body col-md-9 col-sm-9">asd</div>
+	    					<div class="clearfix"></div>
+	    				</div>
+	    				<div class="user-info">
+	    					<div class="info-title col-md-3 col-sm-3">Here For</div>
+	    					<div class="info-body col-md-9 col-sm-9">asd</div>
+	    					<div class="clearfix"></div>
+	    				</div>
+	    				<div class="user-info">
+	    					<div class="info-title col-md-3 col-sm-3">Favorite Sex Categories</div>
+	    					<div class="info-body col-md-9 col-sm-9">asd</div>
+	    					<div class="clearfix"></div>
+	    				</div>
+	    				<div class="user-info">
+	    					<div class="info-title col-md-3 col-sm-3">Ideal Sex Partner</div>
+	    					<div class="info-body col-md-9 col-sm-9">asd</div>
+	    					<div class="clearfix"></div>
+	    				</div>
+	    				<div class="user-info">
+	    					<div class="info-title col-md-3 col-sm-3">My Erogenic Zones</div>
+	    					<div class="info-body col-md-9 col-sm-9">asd</div>
+	    					<div class="clearfix"></div>
+	    				</div>
+	    				<div class="user-info">
+	    					<div class="info-title col-md-3 col-sm-3">Turn Ons</div>
+	    					<div class="info-body col-md-9 col-sm-9">asd</div>
+	    					<div class="clearfix"></div>
+	    				</div>
+	    				<div class="user-info">
+	    					<div class="info-title col-md-3 col-sm-3">Turn Offs</div>
+	    					<div class="info-body col-md-9 col-sm-9">asd</div>
+	    					<div class="clearfix"></div>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div>
+	  </div>
+
+</div>
+<div class="modal-footer">
+	<button type="button" class="btn btn-default pull-left" data-dismiss="modal">关闭</button>
+	<div class="pull-right">
+		<a class="btn btn-danger" data-toggle="dropdown" href="#" alt="Delete" title="Delete">删除</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a id="view_del_user" data-id="3" href="#" class="text-warning">点击确认删除</a>
+			</li>
+		</ul>
+	</div>
+</div>

@@ -1,0 +1,46 @@
+
+body{
+	background-color: #1D88E6;
+	color: #fff;
+}
+.login-layout{
+	text-align: center;
+	/*height: 300px;*/
+	margin: 0 auto;
+	width: 300px;
+	margin-top: 200px;
+}
+.login-item{
+	margin-bottom: 20px;
+}
+.icon{
+	float: left;
+	margin-top: -24px;
+	color: #07B0F1;
+	padding-left: 10px;
+}
+.form-control{
+	padding-left: 30px;
+}
+.btn{
+	background-color: #ddd !important;
+}
+#vcode-img{
+	margin-top: -28px;
+	float: right;
+}
+.modal-content{
+	color: #000
+}
+.vcode{
+	text-transform: uppercase
+}
+.form-control:focus{
+	border-color:'';
+}
+.checkbox-inline{
+	margin-right: 200px;
+}
+.login-title{
+	margin-bottom: 50px;
+}

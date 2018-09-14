@@ -1,0 +1,230 @@
+@charset "utf-8";
+@import url(font-awesome.min.css);
+body{
+	font-size: 12px;
+	font-family: NotoSansHans-Regular,AvenirNext-Regular,arial,Hiragino Sans GB,"Microsoft Yahei","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif;
+}
+
+i{
+	margin-right: 5px;
+}
+.btn{border-radius:0}
+/****************************
+页面架构
+****************************/
+.full-page .main{
+	transition: transform .6s;	
+	transform: translate3d(20px, 0px, 0);
+	margin-left:30px;
+	margin-right: 20px;
+}
+.full-page .ns-header{display: none;}
+.full-page .sidebar,.full-page .nav-sub .sidebar-btn {
+	transform: translate3d(-50px, 0px, 0);
+	transition: transform .6s;
+	padding-left: 40px;
+	width: 100px;
+}
+.full-page .sidebar li:hover{
+	border-left: none;
+	border-right: 3px solid #3f9fe8;
+}
+.full-page .sidebar-btn span{
+	margin-left: 10px;
+}
+.full-page .navbar-brand {
+	transform: translate3d(-46px, 0px, 0);
+	transition: transform .6s;
+	padding-left: 49px;
+	width: 49px;
+}
+.full-page .sub-title{	
+	margin-left: -50px;
+}
+.full-page .sidebar .nav > li > a > span{
+	display: none;
+}
+.full-page .navbar-nav{
+	transform: translate3d(-20px, 0px, 0);
+	transition: transform .6s;
+	margin-left: 20px;
+}
+.full .sidebar,.full .nav-sub .sidebar-btn ,.full .navbar-brand{
+	transform: translate3d(1px, 0px, 0);
+	transition: transform .6s;
+	width: 180px;
+}
+.full .main{
+	transition: transform .6s;
+	/*margin-left:50px;*/
+	transform: translate3d(0px, 0px, 0);
+}
+
+
+/****************************
+顶部及导航下状态栏
+****************************/
+.navbar{
+	border: none;
+	background: #3f9fe8;
+}
+.collapse>ul>li>a{
+	color: #fff;
+}
+
+.collapse>ul>li{
+	border-left: 1px solid #0E8DE9;
+}
+.navbar .nav > li > a:hover, .navbar .nav > li > a:focus,.navbar .nav .open > a, .navbar .nav .open > a:hover, .navbar .nav .open > a:focus{
+	background: #398fd1;
+}
+
+.navbar .container-fluid{
+	padding-left: 0;
+}
+.navbar-header{
+	overflow:hidden ;
+	padding-left: 15px;
+}
+.navbar-right{
+	margin-right:0;
+}
+.navbar-brand{
+	text-indent: 25px;
+	width: 179px;
+	line-height: 50px;
+	padding: 0;
+}
+.navbar-brand .logo{
+	height: 40px;
+	margin-top: 5px;
+}
+
+
+/*---------------------------------*/
+.nav-sub{
+	height: 35px;
+	line-height: 35px;
+	margin-top: 50px;
+	background: #F5F5F5;
+	border-bottom: 1px solid #ccd6e0;
+}
+.nav-sub .sidebar-btn{
+	width: 180px;
+	border-right: 1px solid #ccd6e0;
+}
+
+.nav-sub .sub-title .fa{
+	margin-left: 20px;
+}
+.nav-sub .sub-title{color: #999;}
+
+.sidebar > ul> .ns-header >a{
+	padding-left: 15px;
+}
+.sidebar > ul>.ns-header{
+	border-left: none !important;
+	padding: 12px 15px;
+	background: #e5ebec
+}
+.sidebar .nav > li > a{
+	padding-left: 28px;
+}
+.sidebar-btn{
+	font-size: 16px;
+}
+.sidebar-btn:hover{
+	height: 35px;
+	font-size: 20px;
+	color: #3F9FE8;
+	background:#ECECEC; 
+	cursor: pointer;
+	border-bottom: 1px solid #ccd6e0;
+}
+.navbar-toggle{background: #fff;}
+.icon-bar{background: #3f9fe8;}
+/****************************
+边栏
+****************************/
+.sidebar{
+	width: 180px;
+    position: fixed;
+    top: 85px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #f5f5f5;
+    border-right: 1px solid #d2d6de;
+}
+.sidebar li a:hover{
+	background: #fff;
+}
+.sidebar li:hover{
+	border-left: 3px solid #3f9fe8;
+}
+
+/****************************
+main 主体
+****************************/
+
+.main{
+	margin-top:15px;
+	margin-left: 180px; 
+}
+.box{
+	color: #999;
+    margin-bottom: 20px;
+    border: 1px solid #ccd6e0;
+}
+.box table thead {	
+    background: #f7f7f7;
+    cursor: pointer;
+}
+.box table thead > tr > th{
+	color: #666;
+	font-size: 14px;	
+	border:none;
+	font-weight: normal;
+}
+.box .table > tbody > tr > td {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.tab-content{	
+	font-size: 14px;
+	border-top: none;
+    padding: 20px 30px;
+	border: 1px solid #ddd;
+	border-top: none;
+}
+.tab-content label{	
+	font-weight: 500;
+	color: #666;
+}
+.tab-content .form-control,.box .help-block{
+	font-size: 12px;
+}
+.tab-content .help-block{
+	color: #999;
+}
+.nav-tabs{
+	background: 
+}
+.nav-tabs > li > a{
+	margin-right: -1px;
+	color: #666;
+	background-color: #F7F7F7;
+	border-radius:0;
+    border: 1px solid #dddddd;
+}
+.nav-tabs > li > a:hover{
+	background: #fff;
+    border: 1px solid #dddddd;
+}
+.nav-tabs .active a{
+	padding-top: 8px;
+    border-top: 3px solid #3f9fe8 !important;
+}

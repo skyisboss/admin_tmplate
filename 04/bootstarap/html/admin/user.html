@@ -1,0 +1,100 @@
+<div class="headtop">
+  <div class="headtop_action">
+      <span><i class="fa fa-desktop"></i>用户管理</span>
+  </div>
+</div>
+
+<section class="content">
+            <!--  基本信息   -->
+            <div class="row">
+                <div class="col-md-12 chart-container">
+                    <div class="box box-chart">
+                        <div class="box-header">
+                            <h3 class="box-title">用户列表</h3>
+                        </div>
+                        <div class="group-title" id="anchor-info">
+                        	<div class="col-sm-6">
+	                            <button class="btn btn-primary" onclick="add_user();"><i class="fa fa-plus-circle"></i> 新增</button>
+
+	                            <button class="btn btn-danger" onclick="addri();"><i class="fa fa-ban"></i> 禁用</button>
+                            </div>
+                            <div class="col-sm-3">
+								<form class="pull-right search-bar" method="get" action="http://127.0.0.6/admin.php/user/index/index.html" role="form">
+                                    <input type="hidden" name="search_field" id="search-field" value="id|username|email">
+                                    <div class="input-group">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-default" id="search-btn" data-toggle="dropdown" type="button" aria-expanded="false">
+                                                搜索 <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu u_s_btn">
+                                                <li>
+                                                    <a tabindex="-1" href="javascript:void(0)" data-field="id|username|email">搜索</a>
+                                                </li>
+                                                                                                <li>
+                                                    <a tabindex="-1" href="javascript:void(0)" data-field="id">ID</a>
+                                                </li>
+                                                                                                <li>
+                                                    <a tabindex="-1" href="javascript:void(0)" data-field="username">用户名</a>
+                                                </li>
+                                                                                                <li>
+                                                    <a tabindex="-1" href="javascript:void(0)" data-field="email">邮箱</a>
+                                                </li>
+                                                                                            </ul>
+                                        </div>
+                                        <input type="text" class="form-control u_s_list" value="" name="keyword" placeholder="请输入ID/用户名/邮箱">
+                                        <script type="text/javascript">
+                                        //显示搜索
+                                        	$('.u_s_btn>li').click(function(){
+												var showText = $(this).text();
+												$(this).parent().siblings('button').text(showText);
+											})
+                                        </script>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body app-info-list">
+
+                        <table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th><input type="checkbox" name="" value=""></th>
+						<th>UID</th>
+						<th>账号</th>
+						<th>积分</th>
+						<th>邮箱</th>
+						<th>注册IP</th>
+						<th>注册时间</th>
+						<th>最后登录时间</th>
+						<th>最后登录IP</th>
+						<th>状态</th>
+						<th align="center">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+						<tr>
+						<td><input type="checkbox" name="" value=""></td>
+						<td>1</td>
+						<td>admin</td>
+						<td>500</td>
+						<td>sad@sada.com</td>
+						<td>192.168.1.1</td>
+						<td>2017-01-18 11:08:15</td>
+						<td>2017-04-29 13:11:22</td>
+						<td>127.0.0.1</td>
+						<td><span class="label label-success radius">正常</span></td>
+						<td>
+							<div class="btn-group">
+							<a title="" icon="fa fa-pencil" class="btn btn-xs btn-default" href="/admin.php/user/index/edit/id/1.html" target="_self" data-toggle="tooltip" data-original-title="编辑"><i class="fa fa-pencil"></i></a> 
+							<a title="" icon="fa fa-times" class="btn btn-xs btn-default ajax-get confirm" href="#" data-toggle="tooltip" data-original-title="删除" onclick="del();"><i class="fa fa-times"></i></a> 
+							</div>						
+						</td>
+					</tr>
+					</tbody>
+			</table>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>

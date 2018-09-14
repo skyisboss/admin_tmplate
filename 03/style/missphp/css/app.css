@@ -1,0 +1,1116 @@
+@charset "UTF-8";
+@import url(../../libs/font-awesome/css/font-awesome.min.css);
+@import url(../../libs/bootstrap/css/bootstrap.min.css);
+.fa {
+  margin-right: 5px;
+}
+
+/*循环*/
+.ml0 {
+  margin-left: 0px !important;
+}
+
+.mr0 {
+  margin-right: 0px !important;
+}
+
+.mt0 {
+  margin-top: 0px !important;
+}
+
+.mb0 {
+  margin-bottom: 0px !important;
+}
+
+.pl0 {
+  padding-left: 0px !important;
+}
+
+.pr0 {
+  padding-right: 0px !important;
+}
+
+.pt0 {
+  padding-top: 0px !important;
+}
+
+.pb0 {
+  padding-bottom: 0px !important;
+}
+
+.ml5 {
+  margin-left: 5px !important;
+}
+
+.mr5 {
+  margin-right: 5px !important;
+}
+
+.mt5 {
+  margin-top: 5px !important;
+}
+
+.mb5 {
+  margin-bottom: 5px !important;
+}
+
+.pl5 {
+  padding-left: 5px !important;
+}
+
+.pr5 {
+  padding-right: 5px !important;
+}
+
+.pt5 {
+  padding-top: 5px !important;
+}
+
+.pb5 {
+  padding-bottom: 5px !important;
+}
+
+.ml10 {
+  margin-left: 10px !important;
+}
+
+.mr10 {
+  margin-right: 10px !important;
+}
+
+.mt10 {
+  margin-top: 10px !important;
+}
+
+.mb10 {
+  margin-bottom: 10px !important;
+}
+
+.pl10 {
+  padding-left: 10px !important;
+}
+
+.pr10 {
+  padding-right: 10px !important;
+}
+
+.pt10 {
+  padding-top: 10px !important;
+}
+
+.pb10 {
+  padding-bottom: 10px !important;
+}
+
+.ml15 {
+  margin-left: 15px !important;
+}
+
+.mr15 {
+  margin-right: 15px !important;
+}
+
+.mt15 {
+  margin-top: 15px !important;
+}
+
+.mb15 {
+  margin-bottom: 15px !important;
+}
+
+.pl15 {
+  padding-left: 15px !important;
+}
+
+.pr15 {
+  padding-right: 15px !important;
+}
+
+.pt15 {
+  padding-top: 15px !important;
+}
+
+.pb15 {
+  padding-bottom: 15px !important;
+}
+
+.ml20 {
+  margin-left: 20px !important;
+}
+
+.mr20 {
+  margin-right: 20px !important;
+}
+
+.mt20 {
+  margin-top: 20px !important;
+}
+
+.mb20 {
+  margin-bottom: 20px !important;
+}
+
+.pl20 {
+  padding-left: 20px !important;
+}
+
+.pr20 {
+  padding-right: 20px !important;
+}
+
+.pt20 {
+  padding-top: 20px !important;
+}
+
+.pb20 {
+  padding-bottom: 20px !important;
+}
+
+.ml25 {
+  margin-left: 25px !important;
+}
+
+.mr25 {
+  margin-right: 25px !important;
+}
+
+.mt25 {
+  margin-top: 25px !important;
+}
+
+.mb25 {
+  margin-bottom: 25px !important;
+}
+
+.pl25 {
+  padding-left: 25px !important;
+}
+
+.pr25 {
+  padding-right: 25px !important;
+}
+
+.pt25 {
+  padding-top: 25px !important;
+}
+
+.pb25 {
+  padding-bottom: 25px !important;
+}
+
+.ml30 {
+  margin-left: 30px !important;
+}
+
+.mr30 {
+  margin-right: 30px !important;
+}
+
+.mt30 {
+  margin-top: 30px !important;
+}
+
+.mb30 {
+  margin-bottom: 30px !important;
+}
+
+.pl30 {
+  padding-left: 30px !important;
+}
+
+.pr30 {
+  padding-right: 30px !important;
+}
+
+.pt30 {
+  padding-top: 30px !important;
+}
+
+.pb30 {
+  padding-bottom: 30px !important;
+}
+
+/*------------------------------------------------------------------
+	页面基础
+*/
+html {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: Microsoft YaHei, Roboto,Arial ,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.428571;
+  color: #555;
+  text-align: left;
+  background-color: #f1f1f1;
+}
+
+a {
+  color: #337ab7;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+/*------------------------------------------------------------------
+	重置样式
+*/
+.btn {
+  border-radius: 0;
+}
+
+.missphp-card {
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.missphp-card .card-header {
+  border-bottom: 1px solid transparent;
+}
+
+.missphp-card label.col-form-label {
+  font-weight: 600;
+}
+
+.missphp-card .form-control {
+  font-size: 14px;
+  border-radius: 0;
+}
+
+.missphp-table.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+
+.missphp-table.table-bordered td, .missphp-table.table-bordered th {
+  border: 0;
+  border-bottom: 1px solid #dee2e6;
+}
+
+/*------------------------------------------------------------------
+	app容器 missphp-app-container
+*/
+.missphp-app-container {
+  min-height: 100%;
+  padding-top: 45px;
+}
+
+@media (max-width: 767px) {
+  .missphp-app-container {
+    overflow-x: hidden;
+  }
+}
+
+/*------------------------------------------------------------------
+	顶部条
+*/
+.missphp-top-header {
+  background: #fff;
+  border: 0;
+  margin-bottom: 0;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 0;
+}
+
+.missphp-top-header .top-left-navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 180px;
+}
+
+.missphp-top-header .top-left-navbar .navbar-brand {
+  line-height: 45px;
+  height: 45px;
+  width: 155px;
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  padding: 0 20px;
+  margin: 0;
+  display: block;
+  color: #404040;
+}
+
+.missphp-top-header .top-left-navbar .navbar-brand .fa {
+  font-style: italic;
+}
+
+.missphp-top-header .top-left-navbar .navbar-brand sup {
+  color: #666;
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+.missphp-top-header .top-left-navbar .missphp-toggle-left-sidebar {
+  display: inline-block;
+  text-align: center;
+  line-height: 45px;
+  float: right;
+  padding: 0 15px;
+}
+
+.missphp-top-header .top-left-navbar .missphp-toggle-left-sidebar .fa {
+  font-size: 1rem;
+  color: #404040;
+  line-height: 25px;
+  vertical-align: middle;
+}
+
+.missphp-top-header .top-right-navbar {
+  padding-right: 20px;
+  width: calc(100% - 180px);
+}
+
+.missphp-top-header .top-right-navbar .navbar-nav .nav-item em {
+  font-style: unset;
+}
+
+.missphp-top-header .top-right-navbar .navbar-nav .nav-item .nav-link {
+  color: #404040;
+  padding: 0 15px;
+  line-height: 45px;
+}
+
+.missphp-top-header .top-right-navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #404040;
+  background: #fff;
+}
+
+/*------------------------------------------------------------------
+    左侧边栏
+*/
+.missphp-left-sidebar {
+  background: #f5f5f5;
+  width: 180px;
+  left: 0;
+  position: absolute;
+  border-right: 1px solid #e3e3e3;
+}
+
+.missphp-left-sidebar .sidebar-container {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.missphp-left-sidebar .sidebar-spacer {
+  height: 100%;
+  display: table-row;
+  display: table-row;
+}
+
+.missphp-left-sidebar .sidebar-scroll {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.missphp-left-sidebar .sidebar-scroll.ps {
+  position: absolute;
+}
+
+.missphp-left-sidebar .sidebar-content {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 8px;
+}
+
+.missphp-left-sidebar .sidebar-element {
+  margin: 0;
+  padding: 0;
+}
+
+.missphp-left-sidebar .sidebar-element > li {
+  list-style: none;
+}
+
+.missphp-left-sidebar .sidebar-element > li.parent > a:before {
+  content: '\f0d9';
+  float: right;
+  font-family: "FontAwesome";
+  font-size: 0.8rem;
+  color: #b0b0b0;
+}
+
+.missphp-left-sidebar .sidebar-element > li.parent.open > a:before {
+  content: '\f0d7';
+}
+
+.missphp-left-sidebar .sidebar-element > li > ul {
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.missphp-left-sidebar .sidebar-element > li ul {
+  display: none;
+  background: #eeeeee;
+  padding: 10px 0;
+  list-style: none;
+  line-height: 20px;
+}
+
+.missphp-left-sidebar .sidebar-element > li ul .title {
+  display: none;
+}
+
+.missphp-left-sidebar .sidebar-element > li ul li > ul {
+  padding: 5px 0;
+}
+
+.missphp-left-sidebar .sidebar-element > li ul li > a {
+  padding: 8px 15px 8px 49px;
+  color: #696969;
+  font-size: 13px;
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.missphp-left-sidebar .sidebar-element > li ul li > a:hover {
+  background-color: #e7e7e7;
+}
+
+.missphp-left-sidebar .sidebar-element > li.open > ul, .missphp-left-sidebar .sidebar-element > li.open > ul .nav-items .content > ul {
+  display: block;
+}
+
+.missphp-left-sidebar .sidebar-element > li > a {
+  display: block;
+  padding: 0 20px;
+  color: #646464;
+  font-size: 14px;
+  line-height: 38px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.missphp-left-sidebar .sidebar-element > li > a:hover {
+  color: #646464;
+  background: #f0f0f0;
+}
+
+.missphp-left-sidebar .sidebar-element > li > a .fa {
+  line-height: 18px;
+  min-width: 19px;
+  text-align: center;
+}
+
+.missphp-left-sidebar .sidebar-element .divider {
+  padding: 20px 20px 0;
+  color: #b0b0b0;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: .8462rem;
+}
+
+/*------------------------------------------------------------------
+	右侧边栏
+*/
+.missphp-right-sidebar {
+  position: fixed;
+  background-color: #FAFAFA;
+  margin-top: 61px;
+  padding-bottom: 61px;
+  width: 290px;
+  height: 100%;
+  right: -290px;
+  top: 0;
+  bottom: 0;
+  border-left: 1px solid #e8e8e8;
+  z-index: 1031;
+}
+
+.missphp-right-sidebar .tab-nav .nav-tabs {
+  background-color: transparent;
+  border-bottom: 0;
+  padding: 0;
+}
+
+.missphp-right-sidebar .tab-nav .nav-tabs > li > a {
+  color: #404040;
+  background-color: #f2f2f2;
+  border-width: 0;
+  padding: 14px 10px;
+  min-width: auto;
+  font-size: 14px;
+}
+
+.missphp-right-sidebar .tab-nav .nav-tabs > li > a:hover {
+  border: 0;
+  background-color: #f6f6f6;
+}
+
+.missphp-right-sidebar .tab-nav .nav-tabs > li > a:focus {
+  border: 0;
+}
+
+.missphp-right-sidebar .tab-nav .nav-tabs > li > a.active {
+  color: #4285f4;
+  background-color: transparent;
+}
+
+.missphp-right-sidebar .tab-content-wrap {
+  height: 100%;
+  display: table-row;
+}
+
+.missphp-right-sidebar .tab-content-wrap .tab-content {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  padding: 0;
+  background: transparent;
+  display: table-cell;
+  overflow: hidden;
+  margin-bottom: 40px;
+  border-radius: 0 0 3px 3px;
+}
+
+.missphp-right-sidebar .tab-content-wrap .tab-item-wrap {
+  padding: 10px 20px 0;
+}
+
+.missphp-right-sidebar .tab-content-wrap .tab-item-wrap .category-title {
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  color: gray;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 15px;
+}
+
+.missphp-animate .missphp-right-sidebar {
+  -webkit-transition: all 0.35s ease;
+  -o-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+@media (min-width: 768px) {
+  body.show-right-sidebar .missphp-right-sidebar {
+    right: 0;
+    z-index: 1000;
+  }
+}
+
+/*------------------------------------------------------------------
+	内容区域容器
+*/
+.missphp-content-wrap {
+  position: relative;
+  left: 0;
+  margin-left: 180px;
+  min-height: 100%;
+}
+
+.missphp-content-wrap .page-head {
+  padding: 20px 15px 10px;
+  position: relative;
+}
+
+.missphp-content-wrap .page-head .page-head-title {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 6px;
+  font-weight: 300;
+  letter-spacing: -1px;
+  font-size: 2.154rem;
+  color: #6b6b6b;
+  line-height: 36px;
+}
+
+.missphp-content-wrap .page-head .breadcrumb {
+  background-color: #fff;
+  margin-bottom: 7px;
+  line-height: 16px;
+}
+
+.missphp-content-wrap .page-head .breadcrumb > li {
+  font-size: 13px;
+}
+
+.missphp-content-wrap .page-head .breadcrumb > li > a {
+  color: #007bff;
+}
+
+.missphp-content-wrap .count-widget {
+  margin-bottom: 25px;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 100px;
+  background-color: #ffffff;
+  transition: all .2s ease-in-out;
+}
+
+.missphp-content-wrap .count-widget .widget-celi {
+  display: table-cell;
+}
+
+.missphp-content-wrap .count-widget:hover {
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+  box-shadow: 0 0.5rem 2rem #d8dfed;
+}
+
+.missphp-content-wrap .count-widget .icon-wrap {
+  color: #fff;
+  width: 150px;
+  text-align: center;
+}
+
+.missphp-content-wrap .count-widget .icon-wrap .fa {
+  position: relative;
+  top: 10px;
+}
+
+.missphp-content-wrap .count-widget .icon-wrap.users {
+  background: #ea644a;
+}
+
+.missphp-content-wrap .count-widget .icon-wrap.contents {
+  background: #03b8cf;
+}
+
+.missphp-content-wrap .count-widget .icon-wrap.comments {
+  background: #38b03f;
+}
+
+.missphp-content-wrap .count-widget .icon-wrap.files {
+  background: #8666b8;
+}
+
+.missphp-content-wrap .count-widget .info-wrap {
+  color: #979DAF;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.missphp-content-wrap .count-widget .info-wrap .value {
+  font-size: 36px;
+}
+
+/*------------------------------------------------------------------
+	后台登录
+*/
+.missphp-login {
+  padding-top: 0;
+  margin-left: 0;
+}
+
+.missphp-login .missphp-content {
+  margin: 0;
+}
+
+.missphp-login .missphp-content .main-content {
+  padding: 25px;
+}
+
+.missphp-login .form-container {
+  max-width: 401px;
+  margin: 50px auto;
+}
+
+.missphp-login .form-container .card {
+  margin-bottom: 30px;
+}
+
+.missphp-login .form-container .card .card-header {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 40px;
+  background: #fff;
+  border-bottom: none;
+}
+
+.missphp-login .form-container .card .card-header .description {
+  text-align: center;
+  display: block;
+  line-height: 20px;
+  font-size: 1rem;
+  color: #5a5a5a;
+  margin-top: 11px;
+  padding-bottom: 10px;
+}
+
+.missphp-login .form-container .card .card-body {
+  padding: 20px 30px 15px;
+}
+
+.missphp-login .form-container .card .card-body .login-tools {
+  padding: 15px 0 0;
+  margin-bottom: 16px;
+}
+
+.missphp-login .form-container .card .card-body .login-submit {
+  padding: 19px 0 0;
+  margin-bottom: 1.3842rem;
+}
+
+.missphp-login .form-container .card .card-body .btn-xl {
+  padding: 0 12px;
+  font-size: 1.1538rem;
+  line-height: 43px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+/*------------------------------------------------------------------
+    开关按钮
+*/
+.switch-button {
+  display: inline-block;
+  border-radius: 50px;
+  background-color: #b3b3b3;
+  width: 60px;
+  height: 27px;
+  padding: 4px;
+  position: relative;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.switch-button input[type="checkbox"] {
+  display: none;
+}
+
+.switch-button label {
+  border-radius: 50%;
+  box-shadow: 0 0 1px 1px #FFF inset;
+  background-color: #ffffff;
+  margin: 0;
+  height: 19px;
+  width: 19px;
+  z-index: 1;
+  display: inline-block;
+  cursor: pointer;
+  background-clip: padding-box;
+}
+
+.switch-button label:before {
+  position: absolute;
+  font-size: 11px;
+  font-weight: 600;
+  z-index: 0;
+  content: "关闭";
+  right: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 27px;
+  top: 0;
+  text-align: right;
+  padding-right: 10px;
+  color: #ffffff;
+}
+
+.switch-button input[type="checkbox"]:checked + span {
+  background-color: #5f99f5;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 4px;
+}
+
+.switch-button input[type="checkbox"]:checked + span label {
+  float: right;
+  border-color: #478af4;
+}
+
+.switch-button input[type="checkbox"]:checked + span label:before {
+  position: absolute;
+  font-size: 11px;
+  font-weight: 600;
+  z-index: 0;
+  content: "开启";
+  color: #ffffff;
+  left: 0;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.switch-button.switch-button-yesno label:before {
+  content: "NO";
+}
+
+.switch-button.switch-button-yesno input[type="checkbox"]:checked + span label:before {
+  content: "YES";
+}
+
+.switch-button.switch-button-xs {
+  height: 20px;
+  width: 53px;
+  line-height: 16px;
+  width: 50px;
+}
+
+.switch-button.switch-button-xs label {
+  height: 12px;
+  width: 12px;
+}
+
+.switch-button.switch-button-xs label:before {
+  line-height: 21px;
+}
+
+.switch-button.switch-button-sm {
+  height: 24px;
+  width: 57px;
+  line-height: 20px;
+}
+
+.switch-button.switch-button-sm label {
+  height: 16px;
+  width: 16px;
+}
+
+.switch-button.switch-button-sm label:before {
+  line-height: 25px;
+}
+
+.switch-button.switch-button-lg {
+  height: 30px;
+  width: 63px;
+  line-height: 26px;
+  width: 65px;
+}
+
+.switch-button.switch-button-lg label {
+  height: 22px;
+  width: 22px;
+}
+
+.switch-button.switch-button-lg label:before {
+  line-height: 31px;
+}
+
+.switch-button.switch-button-success {
+  background-color: "#b3b3b3";
+}
+
+.switch-button.switch-button-success label {
+  border-color: #ffffff;
+}
+
+.switch-button.switch-button-success input[type="checkbox"]:checked + span {
+  background-color: "#5f99f5";
+}
+
+.switch-button.switch-button-success input[type="checkbox"]:checked + span label {
+  border-color: #ffffff;
+}
+
+.switch-button.switch-button-warning {
+  background-color: "#b3b3b3";
+}
+
+.switch-button.switch-button-warning label {
+  border-color: #ffffff;
+}
+
+.switch-button.switch-button-warning input[type="checkbox"]:checked + span {
+  background-color: "#f6c163";
+}
+
+.switch-button.switch-button-warning input[type="checkbox"]:checked + span label {
+  border-color: #ffffff;
+}
+
+.switch-button.switch-button-danger {
+  background-color: "#b3b3b3";
+}
+
+.switch-button.switch-button-danger label {
+  border-color: #ffffff;
+}
+
+.switch-button.switch-button-danger input[type="checkbox"]:checked + span {
+  background-color: "#eb6357";
+}
+
+.switch-button.switch-button-danger input[type="checkbox"]:checked + span label {
+  border-color: #ffffff;
+}
+
+/*------------------------------------------------------------------
+	布局样式
+*/
+.boxed-layout.missphp-app-container {
+  max-width: 1200px;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.05);
+}
+
+.boxed-layout .missphp-content-wrap {
+  margin-left: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.boxed-layout .missphp-top-header {
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 1032;
+}
+
+.boxed-layout .missphp-left-sidebar {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 220px;
+  flex: 0 0 220px;
+  position: relative;
+}
+
+.boxed-layout .missphp-right-sidebar {
+  position: absolute;
+}
+
+.fixed-sidebar .missphp-left-sidebar {
+  height: 100%;
+  margin-top: 46px;
+  padding-bottom: 46px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 1029;
+}
+
+.missphp-app-container.drak-theme .missphp-top-header {
+  background: #39435C;
+  border-bottom: 1px solid #39435C;
+}
+
+.missphp-app-container.drak-theme .missphp-top-header .dropdown.show .nav-link {
+  background: #32373c;
+}
+
+.missphp-app-container.drak-theme .missphp-top-header .dropdown .dropdown-menu {
+  border: 0;
+  margin-top: 0;
+  border-radius: 0;
+  background-color: #32373c;
+}
+
+.missphp-app-container.drak-theme .missphp-top-header .dropdown .dropdown-menu .dropdown-item {
+  font-size: 14px;
+  color: #b4b9be;
+}
+
+.missphp-app-container.drak-theme .missphp-top-header .dropdown .dropdown-menu .dropdown-item:hover {
+  color: #67dfff;
+  background: #191e23;
+  background: #191e23;
+}
+
+.missphp-app-container.drak-theme .missphp-top-header .top-left-navbar .navbar-brand {
+  color: #fff;
+}
+
+.missphp-app-container.drak-theme .missphp-top-header .top-left-navbar .navbar-brand sup {
+  color: #ddd;
+}
+
+.missphp-app-container.drak-theme .missphp-top-header .top-right-navbar .navbar-nav .nav-item .nav-link {
+  color: #fff;
+}
+
+.missphp-app-container.drak-theme .missphp-top-header .top-right-navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #67dfff;
+  background: #191e23;
+}
+
+.missphp-app-container.drak-theme .missphp-top-header .top-right-navbar .navbar-nav .nav-item.active .nav-link {
+  background: #080808;
+}
+
+.missphp-app-container.drak-theme .missphp-left-sidebar {
+  background: #39435C;
+  border-right: 1px solid #39435C;
+}
+
+.missphp-app-container.drak-theme .missphp-left-sidebar .sidebar-element > li > a {
+  color: #fff;
+}
+
+.missphp-app-container.drak-theme .missphp-left-sidebar .sidebar-element > li > a:hover {
+  color: #67dfff;
+  background: #191e23;
+}
+
+.missphp-app-container.drak-theme .missphp-left-sidebar .sidebar-element > li ul {
+  background: #32373c;
+  border-top: 1px solid #32373c;
+  border-bottom: 1px solid #32373c;
+}
+
+.missphp-app-container.drak-theme .missphp-left-sidebar .sidebar-element > li ul li > a {
+  color: #b4b9be;
+}
+
+.missphp-app-container.drak-theme .missphp-left-sidebar .sidebar-element > li ul li > a:hover {
+  color: #67dfff;
+  background: #191e23;
+}
+
+.main-menu {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .main-menu {
+    display: inline-block;
+  }
+  .main-menu .dropdown-toggle::after {
+    display: none;
+  }
+  .missphp-top-header .nav-link .fa {
+    margin-right: 0;
+    font-size: 20px;
+  }
+  .missphp-top-header .nav-link em {
+    display: none;
+  }
+  .missphp-top-header .top-left-navbar {
+    width: 70px;
+  }
+  .missphp-top-header .top-left-navbar .navbar-brand {
+    display: none;
+  }
+  .missphp-top-header .top-right-navbar {
+    width: calc(100% - 70px);
+  }
+  .missphp-top-header .top-right-navbar .float-left {
+    display: none;
+  }
+  .missphp-left-sidebar {
+    display: none;
+  }
+  .missphp-content-wrap {
+    margin-left: 0;
+  }
+}

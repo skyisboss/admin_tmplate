@@ -1,0 +1,389 @@
+@charset 'utf-8';
+@import url(../font-awesome.min.css);
+/*==========================
+无觅 www.wumiss.cm
+2016年1月29日21:37:47;
+==========================*/
+
+body{
+	font-size: 12px;
+	font-family: NotoSansHans-Regular,AvenirNext-Regular,arial,Hiragino Sans GB,"Microsoft Yahei","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif;
+}
+
+/*==========================
+后台登录页
+==========================*/
+.login{
+	font-family: "Helvetica Neue",Helvetica,Tahoma,Arial,'Microsoft Yahei','Hiragino Sans GB','WenQuanYi Micro Hei',sans-serif;
+	font-size: 14px;
+	background: #1D88E6;
+}
+.login .login_warp{
+	width: 300px;
+	margin: 200px auto;
+	color: #fff;
+}
+.login_warp h3{
+	text-align: center;
+}
+.login_warp .form{
+	margin: 40px 0;
+}
+.login_warp .login-item{
+	margin-bottom: 20px;
+}
+.login_warp .login-text{	
+	color: #353535;
+	background-color: #ddd;
+	text-shadow: 0 1px 0 #fff;
+	border-radius: 4px;
+}
+.login_warp .login-text:hover{
+	color: #000;
+	font-size: 15px;
+}
+.login-item .fa{
+	position: absolute;
+	color: #07B0F1;
+	margin: -24px 0 0 10px;
+}
+.login-item .form-control{
+	border-radius: 4px;
+	padding-left: 33px;
+}
+.login-item .code{
+	padding-right: 100px;
+}
+.login-item img{
+	float: left;
+    margin-left: 242px;
+    margin-top: -28px;
+}
+
+/*==========================
+页面架构
+==========================*/
+.full-page .sidebar{width: 49px;}
+.full-page .admin-nav .navbar-brand {    white-space: nowrap;width: 50px;overflow: hidden;}
+.full-page .main{margin-left: 40px;}
+.full-page .sidebar .full-bar i{transform:rotate(-90deg);}
+.full-page .nav-sidebar li a span{display: none}
+.full-page .headtop{padding-left: 70px}
+.full-page .ns-header{display: none;}
+
+/*==========================
+BS重定义样式 
+==========================*/
+/*包裹*/
+.wrapper{
+	margin: 20px 15px;
+}
+
+/*面板*/
+.panel{
+	border-radius: 0;
+}
+.panel-title{
+	font-size: 14px
+}
+.panel-body{
+	padding: 0px
+}
+.panel-footer{
+	padding: 20px;
+	background: #fff;
+}
+.panel-item{
+	padding: 15px;
+}
+table thead{
+    background: #f7f7f7;
+    cursor: pointer;
+}
+.table>tbody>tr>td{
+	cursor: pointer;
+}
+.table>thead>tr>th{
+	border-bottom: none;
+}
+
+/*按钮*/
+.btn{
+	border-radius: 0;
+}
+.check-all{
+	background: #eee;
+}
+
+/*单选*/
+.radio-inline input[type=radio] {
+    margin-top: 1px;
+}
+
+/*Tips*/
+.help-block{
+	color: #b2b2b2;
+}
+.help-block i{
+	padding-right: 5px;
+}
+
+/*表单*/
+.form-control{
+	border-radius: 0;
+}
+.input-group-addon{
+	border-radius: 0;
+}
+
+/*选项卡*/
+.tab-body{
+	margin: 15px;
+}
+
+/*模态框*/
+#myModal{
+	margin: 100px auto;
+}
+#myModal .modal-dialog{
+	width: 350px;
+}
+.modal-body {
+    padding: 30px 15px;
+}
+.modal-content{
+	border-bottom: 1px solid #eee;
+    box-shadow: none;
+    border-radius: 0;
+}
+.modal-header{	
+	height: 40px;
+	padding: 10px 15px;
+	background-color: #F8F8F8;
+}
+.modal-header h4{
+	font-size: 14px;
+}
+.modal-title {
+	color: #3F9FE8;
+}
+.modal-footer{
+	border-top: none;
+}    
+
+.modal-footer .btn{
+	font-size: 12px;
+	padding: 6px 22px 4px;
+}
+.modal-footer .btn-default{
+	background-color: #f1f1f1;
+}
+.modal-footer .btn-default:hover{
+	border-color:#999;
+}
+.modal-footer .btn-primary{
+	border-color: none;
+	border:1px solid #3F9FE8;
+	background: #3F9FE8;
+}
+.modal-footer .btn-primary:hover{
+	background: #1c87d9 !important;
+}
+
+
+
+/*==========================
+后台首页 顶部导航
+==========================*/
+.admin-nav .navbar-toggle{border-color: #fff;}
+.admin-nav .navbar-toggle .icon-bar {background-color: #fff;}
+.admin-nav .navbar-toggle:hover {background-color: #666;}
+
+.admin-nav{
+	color: #fff;
+	font-size: 12px;
+	background-color: #3f9fe8;
+}
+.admin-nav .navbar-right{
+	margin-right:0;
+}
+
+.admin-nav .dropdown:hover .dropdown-menu{
+	display: block;
+}
+.admin-nav .navbar-brand{
+	width: 180px;
+}
+.admin-nav .collapse i{
+	padding-right: 3px;
+}
+.admin-nav .navbar-header a , .admin-nav .navbar-nav li a,.admin-nav .navbar-nav li a:hover{
+	color: #fff;
+}
+.admin-nav .navbar-nav li:hover,.admin-nav .navbar-nav li a:focus{
+	cursor: pointer;
+	color: #fff;
+	background: #398FD1;
+}
+.admin-nav .collapse ul li,.admin-nav .navbar-brand{
+	border-left: 1px solid #0E8DE9;
+    border-right: 1px solid #64B2ED;
+}
+.collapse .bl{border-left: none !important;}
+.collapse .br{border-right: none !important;}
+.headtop{
+	width: 100%;
+	font-size: 12px;
+    height: 41px;
+    line-height: 41px;
+    margin-top: 50px;
+    padding-left: 200px;
+    background: #F5F5F5;
+    color: #A0A0A0;
+    border-bottom: 1px solid #ccd6e0;
+}
+.headtop i{
+	padding-right: 5px;
+}
+/*下拉菜单*/
+.dropdown-menu{
+	border-radius: 0;
+}
+.admin-nav .dropdown .dropdown-menu li{
+	border-left:none;border-right:none;
+}
+.admin-nav .dropdown .dropdown-menu li a{
+	color: #666;
+}
+/*选项卡*/
+.nav-tabs{
+	border-bottom: none;
+}
+#myTab>.active>a{
+	color: #3f9fe8;
+	border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-top: 2px solid #3f9fe8;
+}
+.nav-tabs>li>a:hover{
+	background: #fff;
+	border: 1px solid #dddddd;
+}
+.nav-tabs>li>a{
+	padding: 10px 25px;
+	margin-right: -1px;
+	border-radius: 0;
+    border-top: 1px solid transparent;
+    background-color: #F7F7F7;
+    color: #666;
+    border: 1px solid #dddddd;
+}
+.tab-content{
+	border: 1px solid #ccd6e0;
+	padding: 15px;
+    margin-top: -1px;
+}
+
+
+
+/*==========================
+后台首页 边栏
+==========================*/
+
+@media (min-width: 768px){
+	.sidebar {
+	    display: none;
+	}
+}
+.sidebar {
+	width: 181px;
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #f5f5f5;
+    border-right: 1px solid #d2d6de;
+}
+.ns-header{
+	height: 44px;
+	line-height: 44px;
+	color: #666666;
+    padding-left: 15px;
+    background: #E5EBEC;
+}
+.nav-sidebar li i{
+	padding: 5px;
+}
+.nav-sidebar li a:hover{
+	background: #fff;
+	border-left: 3px solid #3F9FE8;
+}
+.nav-sidebar li:hover{
+}
+.sidebar .full-bar{
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	text-align: center;
+	border-bottom: 1px solid #ccd6e0;
+}    
+.sidebar .full-bar:hover{
+	color: #3F9FE8;
+	font-size: 20px;
+	background: #ECECEC;cursor: pointer;
+}
+
+
+
+/*==========================
+后台 页面主体
+==========================*/
+.main{
+	margin-top: 0px;    margin-left: 170px;
+}
+.main .content{margin-top: 20px;}
+.main .welcome h3{font-size: 22px;margin-bottom: 5px;}
+.main .welcome p{font-size: 12px;color: #999;}
+
+.box{
+	border: 1px solid #ccd6e0;
+	margin-bottom: 20px;
+}
+.boxhead{
+	height: 40px;
+	line-height: 40px;
+    text-indent: 5px;
+    color: #333333;
+	background: #f7f7f7;
+	border-bottom: 1px solid #ccd6e0;
+}
+.boxhead i{margin-right: 5px;}
+.box .table{margin-bottom: 0;    margin-top: -1px;}
+.box .table > tbody > tr > td{
+	font-size:12px;
+	color: #999;
+	height: 40px;
+	vertical-align: middle;
+	border-bottom: 1px solid #f0f0f0;}
+.box td:hover{cursor: pointer;}
+
+
+.form-horizontal .control-label{
+	font-size: 12px;
+	font-weight: normal;
+    text-align: left;
+}
+.form-control{
+	font-size: 12px;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+}
+.form-control[disabled],.form-control[readonly]{
+	    font-size: 12px;
+	    background-color: #F5F5F5;
+}
+.box .btn{border-radius:0;}

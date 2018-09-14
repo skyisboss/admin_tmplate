@@ -1,0 +1,164 @@
+/*------------------------------------------------------------------
+	布局样式
+*/
+
+// 盒子布局
+.boxed-layout{
+	&.missphp-app-container {
+	    max-width: 1200px;
+	    position: relative;
+	    margin: 0 auto;
+	    overflow: hidden;
+	    background-color: #f1f1f1;
+	    display: -webkit-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-shadow: 0 0 7px 2px rgba(0,0,0,.05);
+	    box-shadow: 0 0 7px 2px rgba(0,0,0,.05);
+	}
+	.missphp-content-wrap {
+	    margin-left: 0;
+	    overflow: hidden;
+	    width: 100%;
+	}
+	.missphp-top-header {
+	    max-width: 1200px;
+	    margin: 0 auto;
+	    z-index: 1032;
+	}
+	.missphp-left-sidebar {
+	    -webkit-box-flex: 0;
+	    -ms-flex: 0 0 220px;
+	    flex: 0 0 220px;
+	    position: relative;
+	}
+	.missphp-right-sidebar {
+	    position: absolute;
+	}
+}
+
+// 固定侧边栏
+.fixed-sidebar {
+	.missphp-left-sidebar {
+	    height: 100%;
+	    margin-top: $top-left-navbar-height + 1;
+	    padding-bottom: $top-left-navbar-height + 1;
+	    position: fixed;
+	    top: 0;
+	    bottom: 0;
+	    z-index: 1029;
+	}
+}
+
+// 收缩侧边栏
+.collapsible-sidebar {}
+
+
+// 夜晚主图
+$drak-color:#39435C;
+@mixin drak-link-hover(){
+    color: #67dfff;
+    background: #191e23;
+}
+.missphp-app-container.drak-theme {
+	.missphp-top-header {
+		background: $drak-color;
+		border-bottom: 1px solid $drak-color;
+
+		.dropdown{
+			&.show .nav-link{ background: #32373c; }
+			.dropdown-menu {
+				border: 0;
+				margin-top: 0;
+				border-radius: 0;
+				background-color:#32373c;
+				.dropdown-item {
+					font-size:14px;
+					color:#b4b9be;
+					//padding: 5px 10px;
+					&:hover {
+						@include drak-link-hover();
+						background: #191e23;
+					}
+				}
+			}
+		}
+		
+		.top-left-navbar {
+			.navbar-brand {
+				color: #fff;
+				sup {
+				    color:#ddd;
+				}
+			}
+		}
+
+		.top-right-navbar {
+			.navbar-nav {
+				.nav-item {
+					.nav-link {
+						color: #fff;
+						&:hover {
+							@include drak-link-hover();
+						}
+					}
+					&.active .nav-link{
+						background: #080808;
+					}
+				}
+			}
+		}
+	}
+
+	.missphp-left-sidebar {
+		background: $drak-color;
+		border-right: 1px solid $drak-color;
+		.sidebar-element > li > a { color: #fff;}
+		.sidebar-element > li > a:hover { @include drak-link-hover();}
+		.sidebar-element > li ul {
+			background: #32373c;
+			border-top: 1px solid #32373c;
+			border-bottom: 1px solid #32373c;
+			li > a{
+				color: #b4b9be;
+				&:hover { @include drak-link-hover(); }
+			}
+		}
+	}
+}
+
+
+// 媒体查询 768px
+.main-menu {display: none;}
+@media #{$phone} { // ~ max-width: 768px
+	.main-menu {
+		display: inline-block;
+		.dropdown-toggle::after {display: none;}
+	}
+	.missphp-top-header {
+		.nav-link {
+			.fa { 
+				margin-right:0;
+				font-size:20px;
+			}
+			em { display: none;}
+		}
+		$navbar-width:70px;
+		.top-left-navbar {
+			width: $navbar-width;
+			.navbar-brand { display: none; }
+		}
+		.top-right-navbar {
+			width: calc(100% - #{$navbar-width} );
+			.float-left {display: none;}
+		}
+	}
+
+	.missphp-left-sidebar {
+		display: none;
+	}
+
+	.missphp-content-wrap {
+		margin-left: 0;
+	}
+}

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 自定义滚动条 -->
+    <link rel="stylesheet" type="text/css" href="style//libs/perfect-scrollbar/css/perfect-scrollbar.css">
+    <link rel="stylesheet" href="style/missphp/css/app.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <!-- 代码区域 -->
+    <div class="missphp-app-container fixed-sidebar drak-theme">
+        <!-- 顶部导航条 -->
+        <nav class="navbar navbar-expand navbar-default fixed-top missphp-top-header">
+            <div class="container-fluid">
+                <!-- logo -->
+                <div class="top-left-navbar">
+                    <a class="navbar-brand" href="#"><i class="fa fa-maxcdn">issPHP</i><sup>v1.0.1</sup></a>
+                    <a class="missphp-toggle-left-sidebar" href="#"><i class="fa fa-bars"></i></a>
+                    <ul class="navbar-nav main-menu">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#"><i class="fa-fw fa fa-bullseye"></i>模块</a>
+                                <a class="dropdown-item" href="#"><i class="fa-fw fa fa-plug"></i>插件</a>
+                                <a class="dropdown-item" href="#"><i class="fa-fw fa fa-tachometer"></i>主题</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 导航栏 -->
+                <div class="top-right-navbar">
+                    <ul class="navbar-nav float-left">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"><i class="fa-fw fa fa-home"></i><em>控制台</em></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-fw fa fa-cubes"></i><em>内容发布</em></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-fw fa fa-users"></i><em>用户管理</em></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-fw fa fa-cogs"></i><em>系统设置</em></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-fw fa fa-window-restore"></i><em>功能扩展</em></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-fw fa fa-cloud"></i><em>应用中心</em></a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#"><i class="fa-fw fa fa-bullseye"></i>模块</a>
+                                <a class="dropdown-item" href="#"><i class="fa-fw fa fa-plug"></i>插件</a>
+                                <a class="dropdown-item" href="#"><i class="fa-fw fa fa-tachometer"></i>主题</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav float-right">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-fw fa fa-trash"></i><em>缓存</em></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-fw fa fa-external-link-square"></i><em>前台</em></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-fw fa fa-user-circle"></i><em>晚上好,admin</em></a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item right-tool" href="#"><i class="fa-fw fa fa-cog"></i>快捷工具</a>
+                                <a class="dropdown-item" href="#"><i class="fa-fw fa fa-pencil-square"></i>个人信息</a>
+                                <a class="dropdown-item" href="login.html"><i class="fa-fw fa fa-sign-out"></i>退出</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 左侧边栏 -->
+        <div class="missphp-left-sidebar">
+            <div class="sidebar-container">
+                <div class="sidebar-spacer">
+                    <div class="sidebar-scroll">
+                        <div class="sidebar-content">
+                            <ul class="sidebar-element">
+                                <li class="divider">控制台</li>
+                                <li>
+                                    <a href="index.html"><i class="fa fa-cog"></i><span>普通页面</span></a>
+                                </li>
+                                <li class="parent">
+                                    <a href="#"><i class="fa fa-circle-o"></i><span>UI元素</span></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="form.html">表单</a></li>
+                                        <li><a href="table.html">表格</a></li>
+                                        <li><a href="button.html">按钮</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 内容区域容器 -->
+        <div class="missphp-content-wrap">
+            <!-- 面包屑123 -->
+            <div class="page-head">
+                <nav aria-label="breadcrumb" role="navigation">
+                    <ol class="breadcrumb page-head-nav">
+                        <li class="breadcrumb-item"><i class="fa fa-map-marker"></i><a href="#">后台首页</a></li>
+                        <li class="breadcrumb-item active">控制台</li>
+                    </ol>
+                </nav>
+            </div>
+
+            <!-- 主要内容 -->
+            <div class="main-content container-fluid">
+
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="count-widget">
+                            <div class="icon-wrap widget-celi users">
+                                <i class="fa fa-3x fa-users"></i>
+                            </div>
+                            <div class="info-wrap widget-celi">
+                                <div class="value">113</div>
+                                <div class="desc">用戶</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="count-widget">
+                            <div class="icon-wrap widget-celi contents">
+                                <i class="fa fa-3x fa-clipboard"></i>
+                            </div>
+                            <div class="info-wrap widget-celi">
+                                <div class="value">113</div>
+                                <div class="desc">文档</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="count-widget">
+                            <div class="icon-wrap widget-celi comments">
+                                <i class="fa fa-3x fa-comments"></i>
+                            </div>
+                            <div class="info-wrap widget-celi">
+                                <div class="value">113</div>
+                                <div class="desc">评论</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="count-widget">
+                            <div class="icon-wrap widget-celi files">
+                                <i class="fa fa-3x fa-folder-open"></i>
+                            </div>
+                            <div class="info-wrap widget-celi">
+                                <div class="value">113</div>
+                                <div class="desc">文件</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card mb25">
+                            <div class="card-body">
+                                <h6 class="card-title"><i class="fa fa-info-circle"></i>登录信息</h6>
+                                <table class="table table-borderless table-sm mb0">
+                                    <tbody>
+                                        <tr>
+                                            <td>登录次数</td>
+                                            <td>111</td>
+                                        </tr>
+                                        <tr>
+                                            <td>上次登录时间</td>
+                                            <td>2018-08-04 14:44:17</td>
+                                        </tr>
+                                        <tr>
+                                            <td>上次登录地址</td>
+                                            <td>127.0.0.1（本机地址 ）</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card mb25">
+                            <div class="card-body">
+                                <h6 class="card-title"><i class="fa fa-wrench"></i>快捷设置</h6>
+                                <table class="table table-borderless table-sm mb0">
+                                    <tbody>
+                                        <tr>
+                                            <td>应用Trace</td>
+                                            <td><i class="fa fa-times text-danger"> 开启</i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>调式模式</td>
+                                            <td><i class="fa fa-times text-danger"> 开启</i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>站点状态</td>
+                                            <td><i class="fa fa-check text-success"> 正常</i></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb25">
+                            <div class="card-body">
+                                <h6 class="card-title"><i class="fa fa-file-text"></i>操作记录</h6>
+                            This is some text within a card body.
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb25">
+                            <div class="card-header">驱动信息</div>
+                            <div class="card-body">
+                                <table class="table missphp-table table-striped mb0">
+                                    <tbody>
+                                    <tr>
+                                        <td width="50%">MissPHP框架版本</td>
+
+                                        <td>1.1.0 <span class="badge badge-pill badge-success">发现新版本</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ThinkPHP版本</td>
+                                        <td>5.1.18</td>
+                                    </tr>
+                                    <tr>
+                                        <td>操作系统</td>
+                                        <td>WINNT</td>
+                                    </tr>
+                                    <tr>
+                                        <td>运行环境</td>
+                                        <td>nginx/1.11.5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MYSQL版本</td>
+                                        <td>5.5.53</td>
+                                    </tr>
+                                    <tr>
+                                        <td>PHP版本</td>
+                                        <td>5.6.27</td>
+                                    </tr>
+                                    <tr>
+                                        <td>上传限制</td>
+                                        <td>500M</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card  mb25">
+                            <div class="card-header">MissPHP</div>
+                            <div class="card-body">
+                                <table class="table missphp-table table-striped  mb0">
+                                    <tbody>
+                                    <tr>
+                                        <td width="50%">产品名称</td>
+                                        <td>MissPHP — 轻量极速开发框架</td>
+                                    </tr>
+                                    <tr>
+                                        <td>产品开发</td>
+                                        <td>无觅创想<a title="联系QQ" target="_blank" href="http://www.wumiss.com"><i class="fa fa-qq ml15"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>交流QQ群</td>
+                                        <td><img src="http://pub.idqqimg.com/wpa/images/group.png"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>官方网站</td>
+                                        <td><a target="_blank" href="http://www.wumiss.com">http://www.wumiss.com</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>代码托管</td>
+                                        <td><a target="_blank" href="http://www.wumiss.com">http://github.com/skyisboss/missphp</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>特别鸣谢</td>
+                                        <td>
+                                            <a target="_blank" href="http://www.thinkphp.cn/">ThinkPHP</a>、
+                                            <a target="_blank" href="https://getbootstrap.com/">Bootstrap</a>、
+                                            <a target="_blank" href="https://jquery.com/">jQuery</a>、
+                                            <a target="_blank" href="https://fontawesome.com/">FontAwesome</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>捐赠支持</td>
+                                        <td>
+                                            <a target="_blank" href="http://www.apache.org/licenses/LICENSE-2.0">相信在有您的支持，开源能走得更远</a>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 右侧边栏 -->
+        <div class="missphp-right-sidebar">
+            <div class="sidebar-content">
+                <!-- 選項卡 -->
+                <div class="tab-nav">
+                    <ul class="nav nav-tabs nav-justified" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">设置</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">布局</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content-wrap">
+                        <div class="tab-content">
+                            <div class="tab-pane show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+                                <div class="tab-item-wrap">
+                                    设置
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+                                <div class="tab-item-wrap">
+                                    <span class="category-title">界面</span>
+                                    <ul class="settings-list">
+                                        <li>
+                                            <div class="switch-button switch-button-sm">
+                                              <input type="checkbox" checked="" name="st1" id="st1"><span>
+                                                <label for="st1"></label></span>
+                                            </div>
+                                            <span class="name">Available</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+    <script src="style/libs/jquery.min.js"></script>
+    <script src="style/bootstrap4/js/popper.min.js"></script>
+    <script src="style/bootstrap4/js/bootstrap.min.js"></script>
+    <!-- 自定义滚动条 -->
+    <script src="style/libs/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+    <script src="style/missphp/js/app.js"></script>
+</body>
+</html>

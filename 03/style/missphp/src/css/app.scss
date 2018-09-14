@@ -1,0 +1,20 @@
+// font-awesome 4.7.0
+@import "../../libs/font-awesome/css/font-awesome.min.css";
+
+//bootstrap 4.13
+@import "../../libs/bootstrap/css/bootstrap.min.css";
+
+
+// 配置
+@import "config";
+// 基本布局
+@import "include/base-common";
+@import "include/app-container";
+@import "include/top-header";
+@import "include/left-sidebar";
+@import "include/right-sidebar";
+@import "include/content-wrap";
+
+@import "include/login";
+@import "include/switch-button";
+@import "include/layout";

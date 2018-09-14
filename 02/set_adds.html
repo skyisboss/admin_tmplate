@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>添加文章</title>
+    <!-- zui -->
+    <link href="css/zui.min.css" rel="stylesheet">
+	<link href="lib/chosen/chosen.min.css" rel="stylesheet">
+  </head>
+  <body>
+<div class="container-fluid">
+<br>
+<ul class="nav nav-tabs" style="margin-bottom: -2px;">
+  <li class="active"><a data-tab href="#tabContent1">添加文章</a></li>
+  <li><a data-tab href="#tabContent2">选项</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="tabContent1">
+    <div class="panel">
+	  <div class="panel-body">
+<form class="form-horizontal">
+    <div class="form-group">
+      <label for="exampleInputAccount4" class="col-sm-2">标题</label>
+      <div class="col-md-6 col-sm-10">
+	    <input type="text" class="form-control" id="exampleInputAccount4" placeholder="请输入原密码">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputAccount4" class="col-sm-2">栏目</label>
+      <div class="col-md-6 col-sm-10">
+	    <select class="form-control">
+		  <option value="">请选择一种水果</option>
+		  <option value="apple">苹果</option>
+		  <option value="banana">香蕉</option>
+		  <option value="orange">桔子</option>
+		</select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputAccount4" class="col-sm-2">标签</label>
+      <div class="col-md-6 col-sm-10">
+		</div>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputAccount4" class="col-sm-2">简介</label>
+      <div class="col-md-6 col-sm-10">
+	    <textarea type="text" class="form-control" rows="4" placeholder=""></textarea>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-primary">提 交</button>
+      </div>
+    </div>
+  </form>
+	  </div>
+	</div>
+  </div>
+  <div class="tab-pane" id="tabContent2">
+    <div class="panel">
+	  <div class="panel-body">
+		...2
+	  </div>
+	</div>
+  </div>
+</div>
+</div>
+    <!-- jQuery (ZUI中的Javascript组件依赖于jQuery) -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <!-- ZUI Javascript组件 -->
+    <script src="js/zui.min.js"></script>
+	<script src="lib/chosen/chosen.min.js"></script>
+	<script>
+		$('select.chosen-select').chosen({
+			no_results_text: '没有找到',    // 当检索时没有找到匹配项时显示的提示文本
+			disable_search_threshold: 10, // 10 个以下的选择项则不显示检索框
+			search_contains: true         // 从任意位置开始检索
+		});
+	</script>
+  </body>
+</html>

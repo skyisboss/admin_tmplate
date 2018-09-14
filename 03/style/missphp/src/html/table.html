@@ -1,0 +1,78 @@
+@@include('include/header.html')
+
+        <!-- 内容区域容器 -->
+        <div class="missphp-content-wrap">
+            <!-- 面包屑 -->
+            <div class="page-head">
+                <nav aria-label="breadcrumb" role="navigation">
+                    <ol class="breadcrumb page-head-nav">
+                        <li class="breadcrumb-item"><i class="fa fa-map-marker"></i><a href="#">后台首页</a></li>
+                        <li class="breadcrumb-item active">控制台</li>
+                    </ol>
+                </nav>
+            </div>
+
+            <!-- 主要内容 -->
+            <div class="main-content container-fluid">
+                <div class="card missphp-card">
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col-md-10">
+                                <button type="button" class="btn-sm btn btn-primary">Primary</button>
+                                <button type="button" class="btn-sm btn btn-success">Success</button>
+                                <button type="button" class="btn-sm btn btn-danger">Danger</button>
+                                <button type="button" class="btn-sm btn btn-warning">Warning</button>
+                                <button type="button" class="btn-sm btn btn-info">Info</button>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="input-group">
+                                  <input type="text" class="form-control form-control-sm" placeholder="请输入关键字">
+                                  <div class="input-group-append">
+                                    <span class="input-group-text form-control-sm btn">搜索</span>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <table class="table missphp-table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th width="50" class="table-head-checkbox">
+                                        <input type="checkbox" class="checkbox-input checkbox-main" id="checkbox-checkbox">
+                                    </th>
+                                    <th width="" class="ttable-head-id">ID</th>
+                                    <th width="" class="ttable-head-title">用户组名称</th>
+                                    <th width="" class="ttable-head-description">描述</th>
+                                    <th width="" class="ttable-head-status">状态</th>
+                                    <th width="" class="ttable-head-action">操作</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="td-checkbox">
+                                        <input type="checkbox" class="checkbox-input item-checkbox" value="3">
+                                    </td>
+                                    <td>3</td>
+                                    <td>普通用户</td>
+                                    <td>注册会员</td>
+                                    <td>
+                                        <span class="color-green">
+                                            <i class="fa fa-check-circle"></i>正常</span>
+                                    </td>
+                                    <td class="td-action">
+                                        <a href="/admin/group/edit.html?id=3" class="btn btn-sm btn-default" data-toggle="tooltip" title="" data-original-title="编辑">
+                                            <i class="fa mr0 fa-pencil"></i>
+                                        </a>
+                                        <a href="/admin/group/del.html?id=3" class="btn btn-sm btn-default widget-confirm" data-toggle="tooltip" title="" data-original-title="删除">
+                                            <i class="fa mr0 fa-trash-o"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+@@include('include/footer.html')

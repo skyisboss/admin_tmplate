@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>后台登陆</title>
+
+    <link href="css/zui.min.css" rel="stylesheet">
+	<link href="css/login.css" rel="stylesheet">
+    <style id="themeStyle"></style>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!--[if lt IE 9]>
+      <script src="dist/lib/ieonly/html5shiv.js"></script>
+      <script src="dist/lib/ieonly/respond.js"></script>
+      <script src="dist/lib/ieonly/excanvas.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+<div class="container">
+	<div class="login-layout">
+		<form action="" method="post">
+			<div class="login-item login-title">
+				<h1>后台登录 </h1>
+			</div>
+			<div class="login-item">
+				<input name="username" type="text" class="form-control" placeholder="账号">
+				<i class="icon icon-user"></i>
+			</div>
+			<div class="login-item">
+				<input name="password" type="text" class="form-control" placeholder="密码">
+				<i class="icon icon-lock"></i>
+			</div>
+			<div class="login-item">
+				<input name="chack" type="text" class="form-control vcode" placeholder="验证码">
+				<i class="icon icon-shield"></i>
+				<img src="https://pandao.github.io/planeui/login/images/captcha.png" id="vcode-img">
+			</div>
+			<div class="login-item">
+				<label class="checkbox-inline">
+				  <input type="checkbox" checked=""> 记住登陆状态
+				</label>
+			</div>
+			<div class="login-item">
+				<button type="button" class="btn btn-block" onclick="login();">登 录</button>
+			</div>
+        </form>
+	</div>
+</div>
+</div>
+    <!-- jQuery (ZUI中的Javascript组件依赖于jQuery) -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+
+    <!-- ZUI Javascript组件 -->
+    <script src="js/zui.min.js"></script>
+	<script src="js/login.js"></script>
+  </body>
+</html>

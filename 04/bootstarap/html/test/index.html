@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>后台登录</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/theme/style.css">
+    
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+<body>
+
+    <div id="nav-top"></div>
+    
+    <div class="headtop">
+		  <div class="headtop_action">
+		      <span><i class="fa fa-desktop"></i>后台首页</span>
+		  </div>
+		</div>
+
+    <div class="container-fluid">
+        <div class="sidebar">
+          <div class="full-bar"><i class="fa fa-arrows-h"></i></div>
+
+          <ul class="nav nav-sidebar">
+          	<li class="ns-header">快捷操作</li>
+            <li><a href="#"><i class="fa fa-cog"></i><span>后台首页</span></a></li>
+            <li><a href="#"><i class="fa fa-cog"></i><span>个人设置</span></a></li>
+            <li><a href="#"><i class="fa fa-cog"></i><span>清除缓存</span></a></li>
+          </ul>
+        </div>
+
+
+
+        <div class=" main">
+		    <div class="col-sm-6 col-md-12 welcome">
+			    <h3>欢迎使用 鲸鱼CMS</h3>
+			    <p class="visible-md visible-lg"> 这是您第 2 次登录，上次登录时间： 2017-04-26 19:44:21 ，登录IP： 127.0.0.1:50797</p>
+		    </div>
+
+
+			<div class="col-md-4">
+				<div class="box">
+					<div class="boxhead">
+						<span><i class="fa fa-file-text-o"></i>产品信息</span>
+					</div>
+					<table class="table table-hover">
+					<thead>
+					</thead>
+					<tbody>
+
+                                <tr>
+                                    <td>产品名称</td>
+                                    <td>鲸鱼PHP框架 1.0.9 beta</td>
+                                </tr>
+                                <tr>
+                                    <td>版权信息</td>
+                                    <td>http://www.wumiss.com</td>
+                                </tr>
+                                <tr>
+                                    <td>开发与支持团队</td>
+                                    <td>无觅</td>
+                                </tr>
+                                <tr>
+                                    <td>操作系统</td>
+                                    <td>Apache/2.4.23</td>
+                                </tr>
+                                <tr>
+                                    <td>PHP 版本</td>
+                                    <td>5.6.27</td>
+                                </tr>
+                                <tr>
+                                    <td>MYSQL版本</td>
+                                    <td>5.5</td>
+                                </tr>
+                                </tbody>
+				</table>
+				</div>
+			</div>	
+			<div class="col-md-8">
+				<div class="box">
+					<div class="boxhead">
+						<span><i class="fa fa-file-text-o"></i>网站信息</span>
+					</div>
+					<table class="table table-hover">
+					<thead>
+					</thead>
+					<tbody>
+                                <tr>
+                                    <td>会员注册</td>
+                                    <td>已开启</td>
+                                </tr>                                
+                                <tr>
+                                    <td>会员总数</td>
+                                    <td>500 人</td>
+                                </tr>
+                                <tr>
+                                    <td>评论总数</td>
+                                    <td>500 条</td>
+                                </tr>
+                                <tr>
+                                    <td>下载总数</td>
+                                    <td>500 次</td>
+                                </tr>
+                                <tr>
+                                    <td>今日下载</td>
+                                    <td>500 次</td>
+                                </tr>
+                                <tr>
+                                    <td>今日消耗</td>
+                                    <td>500 酷币</td>
+                                </tr>
+                                
+                                </tbody>
+				</table>
+				</div>
+			</div>	
+			<div class="col-md-12">
+				<div class="box">
+					<div class="boxhead">
+						<span><i class="fa fa-file-text-o"></i>运行日志</span>
+					</div>
+					<table class="table table-hover">
+					<thead>
+					</thead>
+					<tbody>
+                                <tr>
+                                    <td>会员注册</td>
+                                    <td>已开启</td>
+                                </tr>                                
+                                <tr>
+                                    <td>会员总数</td>
+                                    <td>500 人</td>
+                                </tr>
+                                <tr>
+                                    <td>评论总数</td>
+                                    <td>500 条</td>
+                                </tr>
+                                <tr>
+                                    <td>下载总数</td>
+                                    <td>500 次</td>
+                                </tr>
+                                <tr>
+                                    <td>今日下载</td>
+                                    <td>500 次</td>
+                                </tr>
+                                <tr>
+                                    <td>今日消耗</td>
+                                    <td>500 酷币</td>
+                                </tr>
+                                
+                                </tbody>
+				</table>
+				</div>
+			</div>	
+
+
+
+        </div> 
+
+    </div>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/theme/app.js"></script>
+<script>
+$(document).ready(function(){
+	var i=0;
+	$('.full-bar').click(function(){
+		if (i%2 == 0) {
+			$('body').addClass('full-page');
+		}else{
+			$('body').removeClass('full-page');
+		}
+		i++;
+	})
+})
+</script>
+</body>
+</html>

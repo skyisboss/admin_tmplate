@@ -1,0 +1,20 @@
+<?php include_once 'header.php';?>
+
+	<div class="main">
+		<div class="page-title">
+			<i class="glyphicon glyphicon-tint"></i>
+			<h3>…Ë÷√</h3>
+		</div>
+		<div class="boxs">
+                        <div class="show_msg"></div>
+			<div class="panel">
+			  <div class="panel-heading"><h4>” º˛≈‰÷√</h4></div>
+			  <div class="panel-body">
+			    Panel content
+			  </div>
+			</div>
+		</div>
+	</div>
+
+
+<?php include_once 'footer.php';?>

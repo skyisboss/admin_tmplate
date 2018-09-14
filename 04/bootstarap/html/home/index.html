@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>酷源码</title>
+	<link rel="stylesheet" href="css/coolym.css" />
+	<script src="js/jquery.js"></script>
+	<script>
+		$(document).ready(function(){
+		  $('li.show').mousemove(function(){
+		  	$(this).addClass('hidd');
+		  	$(this).find('a').css({'color':'#666'});
+		  	$(this).find('ul').slideDown();
+		  });
+		  $('li.show').mouseleave(function(){
+		  	$(this).removeClass('hidd');
+		  	$(this).find('a').css({'color':''});
+		  	$(this).find('ul').slideUp(0);
+		  });
+		});
+	</script>
+</head>
+<body>
+	<!--顶部-->
+	<div id="header">
+		<div class="nav">
+			<div class="logo fl">
+				<h1><a href="#"><img src="images/logo3.png" alt="酷源码" /></a></h1>
+			</div>
+			<div class="navbar">
+				<ul>
+					<li><a href="#" class="active">首页</a></li>
+					<li class="show"><a href="#">源码</a>
+						<ul class="nav_m">
+							<li><a href="#">子菜单</a></li>
+							<li><a href="#">子菜单</a></li>
+							<li><a href="#">子菜单</a></li>
+							<li><a href="#">子菜单</a></li>
+							<li><a href="#">子菜单</a></li>
+						</ul>
+					</li>
+						
+					<li><a href="#">教程</a></li>
+					<li><a href="#">模板</a></li>
+					<li class="show"><a href="#">福利</a>
+						<ul class="nav_m">
+							<li><a href="#">子菜单</a></li>
+							<li><a href="#">子菜单</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="logins fr">
+					<li><a href="#">搜索</a></li>
+					<li><a href="login.html">登录</a></li>
+					<li><a href="zhuce.html">注册</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--广告-->
+	<div class="ad">
+		<div class="ad_12">AD 1200*100</div>
+	</div>
+	<!--主内容-->
+	<div id="content">
+		<!--顶部焦点-->
+		<div class="section">
+			<div class="warp">
+				<div class="warp_main wm_h">
+					<div class="section_m1 fl">
+						<div class="figure fl">
+							<div class="figure_f">
+								<img src="images/jdt.jpg"/>
+							</div>
+							<div class="figure_t">
+								<li><h3><a href="">[ Python教程]python是什么？python能做什么？</a></h3></li>
+								<li><h3><a href="">[ Python教程]python是什么？python能做什么？</a></h3></li>
+								<li><h3><a href="">[ Python教程]python是什么？python能做什么？</a></h3></li>
+								<li><h3><a href="">[ Python教程]python是什么？python能做什么？</a></h3></li>
+								<li><h3><a href="">[ Python教程]python是什么？python能做什么？</a></h3></li>
+							</div>
+						</div>
+						<div class="today fl">
+							<div class="today_t">
+								<span class="t_t">今日热门</span>
+							</div>
+							<div class="today_b">
+								<div class="today_b_c">
+									<h1><a href="#">web前端学习入门：DIV+CSS对页面布局的优势！</a></h1>
+									<p><a href="#">从小的个人网站乃至大的门户网站都在用Div+CSS进行页面布局，网页设计人员已经把Div+CSS页面布局作为行业</a></p>
+								</div>
+								<div class="today_b_c">
+									<h1><a href="#">web前端学习入门：DIV+CSS对页面布局的优势！</a></h1>
+									<p><a href="#">从小的个人网站乃至大的门户网站都在用Div+CSS进行页面布局，网页设计人员已经把Div+CSS页面布局作为行业</a></p>
+								</div>
+								<div class="today_list">
+									<li><a href="#">[html教程 ]前端进阶（一）：内存空间图解</a></li>
+									<li><a href="#">[html教程 ]前端进阶（一）：内存空间图解</a></li>
+									<li><a href="#">[html教程 ]前端进阶（一）：内存空间图解</a></li>
+									<li><a href="#">[html教程 ]前端进阶（一）：内存空间图解</a></li>
+									<li><a href="#">[html教程 ]前端进阶（一）：内存空间图解</a></li>
+								</div>
+							</div>
+						</div>
+						<div class="ad fl"><div class="ad_9">AD 900*100</div></div>
+					</div>
+					<div class="section_m2 fr">
+						<div class="aside">
+							<div class="aside_section">
+								<span>热门软件</span>
+							</div>
+							<div class="aside_section">
+								<span>热门软件</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--教程-->
+		<div class="clear"></div>
+		<div class="section s_bg " style="height: 630px;">
+			<div class="warp">
+				<div class="warp_bar">
+					<div class="wb_title main_l br fl">
+						<div class="fl">
+							<i class="title_icon"></i>
+							<span>视频/教程</span>
+						</div>
+						<ul class="wb_list fr">
+							<li><a href="#" class="active">网络编程</a></li>
+							<li><a href="#">游戏辅助</a></li>
+							<li><a href="#">网络编程</a></li>
+						</ul>
+					</div>
+					<div class="main_r fr">
+						<span class="top">教程排行</span>
+						<span class="more">更多</span>
+					</div>
+				</div>
+				<div class="warp_main">
+					<div class="wm_l fl br clear">
+						<div class="wm_figure">
+							<div class="figures">
+								<div class="course_more">
+									<img src="images/1.jpg"/>
+									<h4><i>初级</i>PHP 零基础入门教程</h4>
+								</div>
+								<span>81257人在看</span>
+							</div>
+							<div class="figures">
+								<div class="course_more">
+									<img src="images/1.jpg"/>
+									<h4><i>初级</i>PHP 零基础入门教程</h4>
+								</div>
+								<span>81257人在看</span>
+							</div>
+							<div class="figures">
+								<div class="course_more">
+									<img src="images/1.jpg"/>
+									<h4><i>初级</i>PHP 零基础入门教程</h4>
+								</div>
+								<span>81257人在看</span>
+							</div>
+							<div class="figures">
+								<div class="course_more">
+									<img src="images/1.jpg"/>
+									<h4><i>初级</i>PHP 零基础入门教程</h4>
+								</div>
+								<span>81257人在看</span>
+							</div>
+							<div class="figures">
+								<div class="course_more">
+									<img src="images/1.jpg"/>
+									<h4><i>初级</i>PHP 零基础入门教程</h4>
+								</div>
+								<span>81257人在看</span>
+							</div>
+							<div class="figures">
+								<div class="course_more">
+									<img src="images/1.jpg"/>
+									<h4><i>初级</i>PHP 零基础入门教程</h4>
+								</div>
+								<span>81257人在看</span>
+							</div>
+							<div class="figures">
+								<div class="course_more">
+									<img src="images/1.jpg"/>
+									<h4><i>初级</i>PHP 零基础入门教程</h4>
+								</div>
+								<span>81257人在看</span>
+							</div>
+							<div class="figures">
+								<div class="course_more">
+									<img src="images/1.jpg"/>
+									<h4><i>初级</i>PHP 零基础入门教程</h4>
+								</div>
+								<span>81257人在看</span>
+							</div>
+						</div>
+					</div>
+					<div class="wm_r fl">
+						<div class="top">
+							<ol>
+								<li><a href="#">MySQL最新手册教程</a></li>
+								<li><a href="#">秀野堂html5入门视频教程</a></li>
+								<li><a href="#">HTML+CSS基础入门教程</a></li>
+								<li><a href="#">燕十八 Javascrip级视程</a></li>
+								<li><a href="#">MySQL最新手册教程</a></li>
+								<li><a href="#">帝国网站管理系统-二次开发</a></li>
+								<li><a href="#">微信小程序开发CMS系统视频</a></li>
+								<li><a href="#">PHPChina学院Discuz基</a></li>
+								<li><a href="#">兄弟连大型网站架构之MySQ</a></li>
+								<li><a href="#">极客学院微信小程序从基战</a></li>
+							</ol>
+						</div>
+						<div class="ad">
+							<div class="ad_2">AD 240*220</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--模板-->
+		<div class="clear"></div>
+		<div class="section " style="height: 650px;">
+			<div class="warp">
+				<div class="warp_bar">
+					<div class="wb_title main_l br fl">
+						<div class="fl">
+							<i class="title_icon"></i>
+							<span>模板/源码</span>
+						</div>
+						<ul class="wb_list fr">
+							<li><a href="#" class="active">整站源码</a></li>
+							<li><a href="#">特效代码</a></li>
+							<li><a href="#">html模板</a></li>
+						</ul>
+					</div>
+					<div class="main_r fr">
+						<span class="top">源码排行</span>
+						<span class="more">更多</span>
+					</div>
+				</div>
+				<div class="warp_main">
+					<div class="wm_l fl br clear">
+						<div class="wm_figure">
+							<div class="wm_main" style="height: 500px;">
+								<div class="wm_c fl">
+									<div class="wm_top">
+										<div><img src="images/mb.jpg"/></div>
+										<h4>简介大气的教育模板</h4>
+										<p>
+											<span class="time fl">2017-07-07</span>
+											<span class="view fr">浏览：500</span>
+										</p>
+									</div>
+									<div class="wm_bottom">
+										<ul>
+											<li><h4><a href="#"><> 15个华丽丽的模糊大背景网页设计</a></h4></li>
+										<li><h4><a href="#"><> 15个华丽丽的模糊大背景网页设计</a></h4></li>
+										<li><h4><a href="#"><> 15个华丽丽的模糊大背景网页设计</a></h4></li>
+										<li><h4><a href="#"><> 15个华丽丽的模糊大背景网页设计</a></h4></li>
+										</ul>
+									</div>
+								</div>
+								<div class="wm_c fl">
+									<div class="wm_top">
+										<div><img src="images/mb.jpg"/></div>
+										<h4>简介大气的教育模板</h4>
+										<p>
+											<span class="time fl">2017-07-07</span>
+											<span class="view fr">浏览：500</span>
+										</p>
+									</div>
+									<div class="wm_bottom">
+										<ul>
+											<li><h4><a href="#"><> 15个华丽丽的模糊大背景网页设计</a></h4></li>
+										<li><h4><a href="#"><> 15个华丽丽的模糊大背景网页设计</a></h4></li>
+										<li><h4><a href="#"><> 15个华丽丽的模糊大背景网页设计</a></h4></li>
+										<li><h4><a href="#"><> 15个华丽丽的模糊大背景网页设计</a></h4></li>
+										</ul>
+									</div>
+								</div>
+								<div class="wm_c fl">
+									<div class="wm_top">
+										<div><img src="images/mb.jpg"/></div>
+										<h4>简介大气的教育模板</h4>
+										<p>
+											<span class="time fl">2017-07-07</span>
+											<span class="view fr">浏览：500</span>
+										</p>
+									</div>
+									<div class="wm_bottom">
+										<ul>
+											<li><h4><a href="#"><> 15个华丽丽的模糊大背景网页设计</a></h4></li>
+										<li><h4><a href="#"><> 15个华丽丽的模糊大背景网页设计</a></h4></li>
+										<li><h4><a href="#"><> 15个华丽丽的模糊大背景网页设计</a></h4></li>
+										<li><h4><a href="#"><> 15个华丽丽的模糊大背景网页设计</a></h4></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="wm_r fl">
+						<div class="top">
+							<ol>
+								<li><a href="#">MySQL最新手册教程</a></li>
+								<li><a href="#">秀野堂html5入门视频教程</a></li>
+								<li><a href="#">HTML+CSS基础入门教程</a></li>
+								<li><a href="#">燕十八 Javascrip级视程</a></li>
+								<li><a href="#">MySQL最新手册教程</a></li>
+								<li><a href="#">帝国网站管理系统-二次开发</a></li>
+								<li><a href="#">微信小程序开发CMS系统视频</a></li>
+								<li><a href="#">PHPChina学院Discuz基</a></li>
+								<li><a href="#">兄弟连大型网站架构之MySQ</a></li>
+								<li><a href="#">极客学院微信小程序从基战</a></li>
+							</ol>
+						</div>
+						<div class="ad">
+							<div class="ad_2">AD 240*220</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+		
+		<!--综合-->
+	<div class="clear"></div>
+	<div class="section s_bg" style="height: 730px;">
+		<div class="warp">
+			<div class="f br fl">
+				<div class="f_top bb fl">
+					<i class="title_icon m_l"></i><span>福利</span>
+				</div>
+				<div class="f_content fl  m_l">
+					<div class="f_img fl">
+						<li>
+							<a href="#"><img src="images/tw.jpg" alt="" /></a>
+							<h5><a href="#">sad</a></h5>
+						</li>
+						<li>
+							<a href="#"><img src="images/tw.jpg" alt="" /></a>
+							<h5><a href="#">sad</a></h5>
+						</li>
+						<li>
+							<a href="#"><img src="images/tw.jpg" alt="" /></a>
+							<h5><a href="#">sad</a></h5>
+						</li>
+						<li>
+							<a href="#"><img src="images/tw.jpg" alt="" /></a>
+							<h5><a href="#">sad</a></h5>
+						</li>
+					</div>
+					<div class="f_text fl">
+						<ul>
+							<li><a href="#">文章标题块</a></li>
+							<li><a href="#">文章标题块</a></li>
+							<li><a href="#">文章标题块</a></li>
+							<li><a href="#">文章标题块</a></li>
+							<li><a href="#">文章标题块</a></li>
+							<li><a href="#">文章标题块</a></li>
+							<li><a href="#">文章标题块</a></li>
+							<li><a href="#">文章标题块</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="f fr">
+				<div class="f_top bb fl">
+					<i class="title_icon m_r"></i><span>福利</span>
+				</div>
+				<div class="f_content fl  m_r">
+					<div class="f_img fl">
+						<li>
+							<a href="#"><img src="images/tw.jpg" alt="" /></a>
+							<h5><a href="#">sad</a></h5>
+						</li>
+						<li>
+							<a href="#"><img src="images/tw.jpg" alt="" /></a>
+							<h5><a href="#">sad</a></h5>
+						</li>
+						<li>
+							<a href="#"><img src="images/tw.jpg" alt="" /></a>
+							<h5><a href="#">sad</a></h5>
+						</li>
+						<li>
+							<a href="#"><img src="images/tw.jpg" alt="" /></a>
+							<h5><a href="#">sad</a></h5>
+						</li>
+					</div>
+					<div class="f_text fl">
+						<ul>
+							<li><a href="#">文章标题块</a></li>
+							<li><a href="#">文章标题块</a></li>
+							<li><a href="#">文章标题块</a></li>
+							<li><a href="#">文章标题块</a></li>
+							<li><a href="#">文章标题块</a></li>
+							<li><a href="#">文章标题块</a></li>
+							<li><a href="#">文章标题块</a></li>
+							<li><a href="#">文章标题块</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="f br fl">
+				<div class="f_top bb fl">
+					<i class="title_icon m_l"></i><span>福利</span>
+				</div>
+				<div class="f_content fl  m_l">
+					<div class="f_img fl">
+						<li>
+							<a href="#"><img src="images/tw.jpg" alt="" /></a>
+							<h5><a href="#">sad</a></h5>
+						</li>
+						<li>
+							<a href="#"><img src="images/tw.jpg" alt="" /></a>
+							<h5><a href="#">sad</a></h5>
+						</li>
+						<li>
+							<a href="#"><img src="images/tw.jpg" alt="" /></a>
+							<h5><a href="#">sad</a></h5>
+						</li>
+						<li>
+							<a href="#"><img src="images/tw.jpg" alt="" /></a>
+							<h5><a href="#">sad</a></h5>
+						</li>
+					</div>
+					<div class="f_text fl">
+						<ul>
+							<li><a href="#">文章标题块</a></li>
+							<li><a href="#">文章标题块</a></li>
+							<li><a href="#">文章标题块</a></li>
+							<li><a href="#">文章标题块</a></li>
+							<li><a href="#">文章标题块</a></li>
+							<li><a href="#">文章标题块</a></li>
+							<li><a href="#">文章标题块</a></li>
+							<li><a href="#">文章标题块</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="f fr">
+				<div class="f_top bb fl">
+					<i class="title_icon m_r"></i><span>福利</span>
+				</div>
+				<div class="f_content fl  m_r">
+					<div class="f_img fl">
+						<li>
+							<a href="#"><img src="images/tw.jpg" alt="" /></a>
+							<h5><a href="#">sad</a></h5>
+						</li>
+						<li>
+							<a href="#"><img src="images/tw.jpg" alt="" /></a>
+							<h5><a href="#">sad</a></h5>
+						</li>
+						<li>
+							<a href="#"><img src="images/tw.jpg" alt="" /></a>
+							<h5><a href="#">sad</a></h5>
+						</li>
+						<li>
+							<a href="#"><img src="images/tw.jpg" alt="" /></a>
+							<h5><a href="#">sad</a></h5>
+						</li>
+					</div>
+					<div class="f_text fl">
+						<ul>
+							<li><a href="#">文章标题块</a></li>
+							<li><a href="#">文章标题块</a></li>
+							<li><a href="#">文章标题块</a></li>
+							<li><a href="#">文章标题块</a></li>
+							<li><a href="#">文章标题块</a></li>
+							<li><a href="#">文章标题块</a></li>
+							<li><a href="#">文章标题块</a></li>
+							<li><a href="#">文章标题块</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			
+		
+		</div>
+	</div>
+		
+		
+		
+	</div>
+	
+	<!--友情链接-->
+	<div id="links" class="clear">
+		<div class="links_bar">
+			<div class="link_title">
+				<i class="title_icon"></i><span>友情链接</span>
+			</div>
+			<div class="link_href">
+				<ul>
+					<li><a href="#">西部数据</a></li>
+					<li><a href="#">百度</a></li>
+					<li><a href="#">腾讯</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--底部-->
+	<div id="footer">
+		<div class="ft_content">
+			<div class="ft_top">
+				<span><a href="#">关于我们</a></span>
+				<span><a href="#">联系我们</a></span>
+				<span><a href="#">版权声明</a></span>
+				<span><a href="#">网站地图</a></span>
+				<span><a href="#">广告合作</a></span>
+				<span><a href="#">在线投稿</a></span>
+			</div>
+			<div class="ft_bottom">
+				<p>Copyright ©  2014 - 2017  酷源码 www.coolym.com 版权所有 粤ICP备14052198号</p> 
+				<p>
+					声明：本站所提供之资源（包括但不限于文章、教程等）均为网友投稿或网络收集，版权归原作者，仅供学习和研究使用。如有侵犯您的权益，请联系我们删除。
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

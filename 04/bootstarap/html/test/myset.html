@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>后台登录</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/theme/style.css">
+    
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+<body>
+
+    <div id="nav-top"></div>
+
+    <div class="headtop">
+		  <div class="headtop_action">
+		      <span><i class="fa fa-desktop"></i>个人设置</span>
+		  </div>
+		</div>
+
+    <div class="container-fluid">
+        <div class="sidebar">
+          <div class="full-bar"><i class="fa fa-arrows-h"></i></div>
+
+          <ul class="nav nav-sidebar">
+          	<li class="ns-header">快捷操作</li>
+            <li><a href="#"><i class="fa fa-cog"></i><span>后台首页</span></a></li>
+            <li><a href="#"><i class="fa fa-cog"></i><span>个人设置</span></a></li>
+            <li><a href="#"><i class="fa fa-cog"></i><span>清除缓存</span></a></li>
+          </ul>
+        </div>
+
+
+
+        <div class=" main">
+			<div class="content">
+                <div class="col-md-12">
+                <div class="box">
+                    <div class="boxhead">
+                        <span><i class="fa fa-file-text-o"></i>用户信息</span>
+                    </div>
+                    <div class="panel-body">
+        <form class="form-horizontal tasi-form" method="post" action="">
+            <div class="form-group">
+                <label class="col-sm-2 col-xs-4 control-label">角色</label>
+                <div class="col-lg-3 col-sm-4 col-xs-7 input-group">
+                    <select name="form[role]" class="form-control" disabled=""><option value="1" selected="">超级管理员</option><option value="2">网站编辑</option><option value="3">信息发布员</option></select>                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 col-xs-4 control-label">账号</label>
+                <div class="col-lg-3 col-sm-4 col-xs-7 input-group">
+                    <input type="text" class="form-control" name="form[username]" color="#000000" value="admin" readonly="readonly">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 col-xs-4 control-label">邮箱</label>
+                <div class="col-lg-3 col-sm-4 col-xs-7 input-group pull-left">
+                    <input type="text" class="form-control" name="form[password]" value="" placeholder="留空,则使用前台密码" title="">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 col-xs-4 control-label">密码</label>
+                <div class="col-lg-3 col-sm-4 col-xs-7 input-group">
+                    <input type="text" class="form-control" name="form[department]" value="" color="#000000">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 col-xs-4 control-label">新密码</label>
+                <div class="col-lg-3 col-sm-4 col-xs-7 input-group">
+                    <input type="text" class="form-control" name="form[department]" value="" color="#000000">
+                </div>
+            </div>
+            
+
+            <div class="form-group">
+                <label class="col-sm-2 col-xs-4 control-label">备注</label>
+                <div class="col-lg-3 col-sm-4 col-xs-7 input-group">
+                    <textarea name="form[remark]" class="form-control" cols="60" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 col-xs-4 control-label"></label>
+                <div class="col-lg-3 col-sm-4 col-xs-7 input-group">
+                    <input class="btn btn-info col-sm-12 col-xs-12" type="submit" name="submit" value="提交">
+                </div>
+            </div>
+
+        </form>
+    </div>
+                </div>
+            </div>  
+            </div>
+
+
+
+        </div> 
+
+    </div>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/theme/app.js"></script>
+<script>
+$(document).ready(function(){
+	var i=0;
+	$('.full-bar').click(function(){
+		if (i%2 == 0) {
+			$('body').addClass('full-page');
+		}else{
+			$('body').removeClass('full-page');
+		}
+		i++;
+	})
+})
+</script>
+</body>
+</html>

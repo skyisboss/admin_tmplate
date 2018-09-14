@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html>
+  
+  <head data-app="测试">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://127.0.0.16/static/css/backend.css?_v=4">
+    <link rel="stylesheet" type="text/css" href="http://127.0.0.16/static/css/backend-app.css?_v=4">
+    <link rel="stylesheet" type="text/css" href="css/admin.css">
+    <title>网站后台</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="shortcut icon" href="/assets/image/favicon.ico">
+    <!--[if lt IE 9]-->
+      <!--<script src="/static/js/html5shiv.min.js"></script>
+      <script src="/static/js/respond.min.js"></script>-->
+
+    <!--[endif]-->
+    </head>
+  
+  <body class="page-app-dashboard" id="page-crawler-dashboard">
+
+    <div class="wrapper">
+      <header class="main-header">
+        <!-- Logo -->
+        <a href="/" class="logo">
+          <img src="images/logo_sm_white.png" /></a>
+        <nav class="navbar">
+          <ul class="nav navbar-nav">
+            <li><a href="test.html"><i class="fa fa-home"></i>首页</a></li>
+            <li><a href="set.html"><i class="fa fa-cog"></i>系统设置</a></li>
+            <li><a href="#"><i class="fa fa-cubes"></i>模块管理</a></li>
+            <li><a href="userset.html"><i class="fa fa-group"></i> 用户管理</a></li>
+            <li><a href="#"><i class="fa fa-file-text"></i> 内容管理</a></li>
+          </ul>
+          <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+              <li class="n_bl"><a href="#"><i class="fa fa-trash"></i> 缓存</a></li>
+              <li><a href="#"><i class="fa fa-location-arrow"></i> 前台</a>
+              <!-- <li class="dropdown dropdown-search">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fs fs-search-alt"></i>
+                  <span>搜索</span></a>
+                <ul class="dropdown-menu">
+                  <div class="box-search">
+                    <input placeholder="搜索帮助文档" />
+                    <a>
+                      <i class="fs fs-enter"></i>
+                    </a>
+                  </div>
+                </ul>
+              </li> -->
+              <li class="dropdown user-menu dropdown-user">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <img class="img-circle img-zoom" src="/static/images/portrait.png?_v=1">
+                  <i class="fs fs-portrait-bold"></i>
+                  <span class="hidden-xs">管理员</span></a>
+                <ul class="dropdown-menu">
+                  <!-- User image -->
+                  <div class="box">
+                    <div class="box-header">
+                      <div class="box-title">
+                        <div class="pull-left user-info">
+                          <div>
+                            <a href="http://www.shenjianshou.cn/index.php?r=user/account">
+                              <span class="name">欢迎您，admin</span></a>
+                          </div>
+                          <div class="account">
+                            <span class="text-balance">超级管理员</span>
+                            <span class="text-todo" onclick="window.location.href='http://www.shenjianshou.cn/index.php?r=user/service'">修改密码</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="box-body box-profile">
+                      <ul class="list-group list-group-unbordered">
+                        <li class="list-group-item toolbox">
+                          <a class="statistic" href="http://www.shenjianshou.cn/index.php?r=user/dataset">
+                            <span>审核信息</span></a>
+                          <a class="message" href="http://www.shenjianshou.cn/index.php?r=user/messageList">
+                            <span>审核会员</span></a>
+                          <a class="order" href="http://www.shenjianshou.cn/index.php?r=user/orderList">
+                            <span>附件管理</span></a>
+                          <a class="balance" href="http://www.shenjianshou.cn/index.php?r=user/balance">
+                            <span>登录记录</span></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="box-footer">
+                      <a href="http://www.shenjianshou.cn/index.php?r=sign/out">
+                        <i class="fs fs-off-alt"></i>
+                        <span>退出登录</span></a>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- 左侧边栏 -->
+      <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+          
+          <ul class="sidebar-menu">
+            <li class="header">快捷操作</li>
+            <li data-toggle="active" class="active-dashboard">
+              <a href="#" data-page="home">
+                <i class="fa fa-university"></i>
+                <span class="item-text" data-text="后台首页">
+                  <i class="fa fa-university"></i>后台首页</span>
+              </a>
+            </li>
+			     <li data-toggle="active" class="active-input">
+              <a href="#" data-page="pset">
+                <i class="fa fa-cog"></i>
+                <span class="item-text" data-text="个人设置">
+                  <i class="fa fa-cog"></i>个人设置</span>
+              </a>
+            </li>
+            <li data-toggle="active" class="active-code">
+              <a href="#" data-page="home">
+                <i class="fa fa-trash"></i>
+                <span class="item-text" data-text="清空缓存">
+                  <i class="fa fa-trash"></i>清空缓存</span>
+              </a>
+            </li>
+            
+            
+          </ul>
+          <div class="btn-collapse" id="btn-collapse"></div>
+        </section>
+      </aside>
+	  
+	   
+
+<!-- Content -->
+<div class="content-wrapper" id="content_page">
+
+</div>
+
+ 
+
+
+
+	  
+	  <!-- 引入的js -->
+  <script src="../home/js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/meun.js"></script>
+  <script type="text/javascript">
+       $('#btn-collapse').click(function(){
+          if ($('.item-text').css("display")!="none") {            
+            $('body').addClass('sidebar-collapse');
+          }else{            
+            $('body').removeClass('sidebar-collapse');
+          }
+       })
+       $('.header').eq(0).next('li').addClass('active');
+       $('#content_page').load('home.html');
+    </script>
+</body>
+
+</html>

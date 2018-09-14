@@ -1,0 +1,72 @@
+@import url(font-awesome.css);
+
+.page-app-dashboard .status-header-info .info{
+	width: 1000px;
+}
+.headtop{
+	width: 100%;
+	height: 40px;
+	background: #F5F5F5;
+	color: #A0A0A0;
+	border-bottom: 1px solid #ccd6e0;
+}
+.headtop .headtop_action{
+	line-height: 40px;
+	color: #A0A0A0;
+	padding-left: 15px;
+}
+.headtop .headtop_action i{
+	padding-right: 5px;
+}
+
+.form-horizontal .control-label{
+	text-align: left;
+	font-weight: normal;
+}
+
+/*diylayui*/
+.layui-layer-loading .layui-layer-content{margin: 0 auto;}
+/*弹出层*/
+.layui-layer{border-radius: 0px !important;}
+.layui-layer-btn .layui-layer-btn0{border-color: #3f9fe8;background-color: #3F9FE8 !important;}
+.layui-layer-btn a{background-color: #f7f7f7;border-radius: 0px !important;}
+.layui-layer-btn a:hover{border: 1px solid #666 !important;}
+.layui-layer-btn .layui-layer-btn0:hover{border-color: #1c87d9 !important;background-color: #1c87d9 !important;}
+.layui-layer-dialog{width: 360px !important;}
+
+
+
+
+
+
+/*选项卡*/
+.layui-tab-card{
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+}
+.layui-tab-title{height: 43px;margin-bottom: 0;}
+.layui-tab-card>.layui-tab-title{border-bottom: 1px solid #ccd6e0;background-color: #fff;}
+.layui-tab-title .layui-this{color:#3f9fe8;    border-top: 3px solid #3f9fe8; }
+.layui-tab-title li{color: #666666;background:#F7F7F7;    border: 1px solid #dddddd;transition:none;-webkit-transition:none;padding: 0 20px;}
+.layui-tab-card>.layui-tab-title li{margin-left: 0px;}
+.layui-tab-title li:hover{background:#fff;}
+.layui-tab-card>.layui-tab-title .layui-this{border-left: none;border-right: none}
+.layui-tab-content{
+	border: 1px solid #ccd6e0;
+	border-top: none;
+}
+.layui-tab-card .help-block{opacity:initial;color: #b2b2b2;height: 30px;line-height: 30px}
+.layui-tab-card .help-block i{padding-right: 5px}
+.input-group .iga_test{
+	color: #fff;
+    background: #7D9EA9;
+    border-color: #7D9EA9;
+}
+.radio-inline input[type=radio]{margin-top: 1px}
+.form-group{padding: 15px 30px 0 30px;}
+.btn-info{background-color: #3F9FE8;}
+.btn-info:hover{background-color: #1c87d9;}
+
+
+.input-group .u_s_list{height: 30px}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>注册账号</title>
+	<link rel="stylesheet" type="text/css" href="css/coolym.css"/>
+</head>
+<body>
+	<div id="header" class="reg">
+		<div class="top">
+			<div class="logo fl"><img src="http://www.shenjianshou.cn/assets/image/logo_sm.png" height="30px"/></div>
+			<div class="text fr"><span>注册</span></div>
+		</div>
+	</div>
+	<div id="reg_warp">
+		<div class="reg_title"><span>注册帐号</span></div>
+		<div class="f">
+			<form role="form" action="" id="register_form" method="POST" >
+                    <div class="register-box">
+                        <div class="form-group" required="">
+                            <div class="input-title">
+                                <h5 class="pull-right">账号：</h5>
+                            </div>
+                            <input type="text" name="name_login" id="name_login" placeholder="请填写注册账号" tabindex="1">
+                            <div class="help-block" for="error"></div>
+                        </div>
+                        <div class="form-group up-password" required="">
+                            <div class="input-title">
+                                <h5 class="pull-right">密码：</h5>
+                            </div>
+                            <input type="password" name="password" id="password" placeholder="6-20位密码" tabindex="2">
+                            <div class="help-block" for="error"></div>
+                        </div>
+                        <div class="form-group up-confirm" required="">
+                            <div class="input-title">
+                                <h5 class="pull-right">确认密码：</h5>
+                            </div>
+                            <input type="password" name="password2" id="password2" placeholder="再次输入密码" tabindex="3">
+                            <div class="help-block" for="error"></div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-title">
+                                <h5 class="pull-right">邮箱：</h5>
+                            </div>
+                            <input type="email" name="email" id="email" placeholder="请填写邮箱（需要验证）" tabindex="4">
+                            <div class="help-block" for="error"></div>
+                        </div>
+                    </div>
+                    <div class="form-group register-box">
+                        <input type="submit" class="btn" value="注册">
+                    </div>
+                    <div class="form-group go_login register-box">
+                        <span >已有账号，</span><a href="login.html">直接登录&gt;&gt;</a>
+                    </div>
+                </form>
+		</div>
+		<div class="footer">
+			<p>酷源码 www.coolym.com ©2017 京ICP备15008786号</p>
+		</div>
+	</div>
+</body>
+</html>

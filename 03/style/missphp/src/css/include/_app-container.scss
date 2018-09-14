@@ -1,0 +1,11 @@
+/*------------------------------------------------------------------
+	app容器 missphp-app-container
+*/
+.missphp-app-container{
+	min-height: 100%;
+	padding-top: $top-left-navbar-height;
+
+	@media #{$phone} {
+		overflow-x: hidden;
+	}
+}

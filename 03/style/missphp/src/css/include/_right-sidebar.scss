@@ -1,0 +1,94 @@
+/*------------------------------------------------------------------
+	右侧边栏
+*/
+
+.missphp-right-sidebar{
+	position: fixed;
+    background-color: #FAFAFA;
+    margin-top: 61px;
+    padding-bottom: 61px;
+    width: 290px;
+    height: 100%;
+    right: -290px;
+    top: 0;
+    bottom: 0;
+    border-left: 1px solid #e8e8e8;
+    z-index: 1031;
+	.sidebar-content{}
+
+	.tab-nav{
+		.nav-tabs {
+		    background-color: transparent;
+		    border-bottom: 0;
+		    padding: 0;
+		    > li {
+		    	> a {
+		    		color:#404040;
+		    		background-color: #f2f2f2;
+		    		border-width: 0;
+		    		padding: 14px 10px;
+		    		min-width: auto;
+		    		font-size: 14px;
+		    		&:hover{
+		    		  	border: 0;
+		    		  	background-color: #f6f6f6;
+		    		  	//color: #f6f6f6;
+		    		}
+
+		    		&:focus{
+		    			border: 0;
+		    		}
+		    		&.active{
+			    		color: #4285f4;
+			    		background-color: transparent;
+		    		}
+		    	}
+		    }
+		}
+	}
+
+	.tab-content-wrap {
+		height: 100%;
+		display: table-row;
+		.tab-content {
+			height: 100%;
+			position: relative;
+			width: 100%;
+			padding: 0;
+			background: transparent;
+			display: table-cell;
+			overflow: hidden;
+			margin-bottom: 40px;
+			border-radius: 0 0 3px 3px;
+		}
+		.tab-item-wrap {
+			padding: 10px 20px 0;
+			.category-title {
+			    display: block;
+			    font-size: 15px;
+			    font-weight: 400;
+			    color: gray;
+			    padding-top: 15px;
+			    padding-bottom: 15px;
+			    border-bottom: 1px solid #ebebeb;
+			    margin-bottom: 15px;
+			}
+			.settings-list {
+				
+			}
+		}
+	}
+}
+
+.missphp-animate .missphp-right-sidebar {
+    -webkit-transition: all 0.35s ease;
+    -o-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+@media (min-width: 768px) {
+	body.show-right-sidebar .missphp-right-sidebar {
+	    right: 0;
+	    z-index: 1000;
+	}
+}

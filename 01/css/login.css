@@ -1,0 +1,97 @@
+.p-l-30 {
+    padding-left: 30px;
+}
+.p-r-30 {
+    padding-right: 30px;
+}
+.p-t-30 {
+    padding-top: 30px;
+}
+.p-b-20 {
+    padding-bottom: 20px;
+}
+.p-t-20 {
+    padding-top: 20px;
+}
+
+
+.tiles.grey {
+    background-color: #e9ecee;
+}
+.login-container {
+    margin-top: 13%;
+}
+.tiles.white {
+    background-color: #ffffff;
+    color: #8b91a0;
+}
+.tiles {
+    background-color: #bcbcbc;
+    color: #ffffff;
+    position: relative;
+}
+.no-padding {
+    padding: 0px !important;
+}
+.text-black {
+    color: #1b1e24 !important;
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+.btn {
+    display: inline-block;
+    padding: 9px 12px;
+    padding-top: 7px;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: #5e5e5e;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #d1dade;
+    -webkit-border-radius: 3px;
+    background-image: none !important;
+    border: none;
+    text-shadow: none;
+    box-shadow: none;
+    transition: all 0.12s linear 0s !important;
+    font: 14px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #0aa699;
+}
+.btn-cons {
+    margin-right: 5px;
+    min-width: 120px;
+    margin-bottom: 8px;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
+    background-color: #099a8c;
+}
+
+.form-control:focus {
+    border-color: #e5e9ec;
+}
+.form-row input, .form-row select, .form-row textarea, .form-row select2 {
+    margin-bottom: 10px;
+}
+body {
+    direction: ltr;
+    background-color: #1b1e24;
+    color: #6f7b8a;
+    font-family: 'Arial';
+    font-size: 13px;
+    padding: 0px !important;
+    margin: 0px !important;
+    line-height: 1.5;
+    font-style: normal;
+    font-weight: normal;
+    height: 100%;
+        font-family: 'Open Sans',Helvetica,Arial,sans-serif;
+}
